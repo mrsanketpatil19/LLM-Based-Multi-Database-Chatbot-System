@@ -12,9 +12,6 @@ langchain-community==0.0.36
 langchain-core==0.1.53
 langchain-text-splitters==0.0.2
 
-# Database
-sqlite3
-
 # Vector embeddings and search
 faiss-cpu==1.11.0
 sentence-transformers==3.0.0
