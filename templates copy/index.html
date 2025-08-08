@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Unified Agent (PDF + SQL)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Unified Agent (PDF + SQL)</h1>
+    <p class="muted">Ask about PDF policies or the patient database. The agent auto-routes and shows the source + tool used.</p>
+
+    <div class="row">
+      <input id="q" type="text" placeholder="Try: Give summary of patient with id 30" />
+      <button id="send">Ask</button>
+    </div>
+
+    <pre id="out">Ready.</pre>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

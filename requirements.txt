@@ -1,0 +1,29 @@
+fastapi==0.116.1
+uvicorn[standard]==0.32.1
+python-dotenv==1.0.1
+pydantic==2.10.4
+jinja2==3.1.6
+aiofiles==24.1.0
+
+# LangChain and related packages
+langchain==0.1.16
+langchain-openai==0.1.6
+langchain-community==0.0.36
+langchain-core==0.1.53
+langchain-text-splitters==0.0.2
+
+# Database
+sqlite3
+
+# Vector embeddings and search
+faiss-cpu==1.11.0
+sentence-transformers==3.0.0
+
+# PDF processing
+PyMuPDF==1.25.1
+
+# HTTP client
+httpx==0.28.1
+
+# Additional utilities
+python-multipart==0.0.20

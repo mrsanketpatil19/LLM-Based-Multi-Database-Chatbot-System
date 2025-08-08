@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare AI Assistant - Chat</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-robot"></i>
+                    <h1>Healthcare AI Assistant</h1>
+                </div>
+                <nav class="nav-menu">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/chatbot" class="nav-link active">Chat</a>
+                    <a href="/about" class="nav-link">About Project</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="chat-container">
+            <div class="chat-layout">
+                <!-- Chat Area -->
+                <div class="chat-area">
+                    <div class="chat-header">
+                        <h2><i class="fas fa-comments"></i> Chat with AI Assistant</h2>
+                        <div class="status-indicator" id="status-indicator">
+                            <span class="status-dot"></span>
+                            <span class="status-text">Ready</span>
+                        </div>
+                    </div>
+
+                    <div class="messages-container" id="messages-container">
+                        <!-- Welcome message -->
+                        <div class="message bot-message">
+                            <div class="message-avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="message-content">
+                                <div class="message-text">
+                                    Hello! I'm your healthcare AI assistant. I can help you with:
+                                </div>
+                                <div class="message-examples">
+                                    <div class="example-section">
+                                        <h4><i class="fas fa-database"></i> Database Queries</h4>
+                                        <ul>
+                                            <li>"How many patients have hypertension?"</li>
+                                            <li>"Show me diabetes patients"</li>
+                                            <li>"What medications were prescribed for chest pain?"</li>
+                                        </ul>
+                                    </div>
+                                    <div class="example-section">
+                                        <h4><i class="fas fa-file-pdf"></i> Document Queries</h4>
+                                        <ul>
+                                            <li>"What are my privacy rights?"</li>
+                                            <li>"How do I contact UNC Health?"</li>
+                                            <li>"What medications are covered?"</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Typing indicator -->
+                    <div class="typing-indicator" id="typing-indicator" style="display: none;">
+                        <div class="message bot-message">
+                            <div class="message-avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="message-content">
+                                <div class="typing-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Input Area -->
+                    <div class="input-area">
+                        <div class="input-container">
+                            <div class="input-wrapper">
+                                <input type="text" id="message-input" placeholder="Ask me anything about healthcare..." />
+                                <button id="send-button" class="send-button">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                            <div class="quick-actions">
+                                <button class="quick-action" data-query="How many patients have hypertension?">
+                                    <i class="fas fa-chart-bar"></i> Hypertension Stats
+                                </button>
+                                <button class="quick-action" data-query="What are my privacy rights?">
+                                    <i class="fas fa-shield-alt"></i> Privacy Rights
+                                </button>
+                                <button class="quick-action" data-query="Show me diabetes patients">
+                                    <i class="fas fa-user-injured"></i> Diabetes Patients
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info Panel -->
+                <div class="info-panel">
+                    <div class="info-header">
+                        <h3><i class="fas fa-info-circle"></i> Information</h3>
+                    </div>
+                    <div class="info-content" id="info-content">
+                        <div class="info-section">
+                            <h4>Data Sources</h4>
+                            <ul>
+                                <li><i class="fas fa-database"></i> Healthcare Database</li>
+                                <li><i class="fas fa-file-pdf"></i> PDF Documents</li>
+                            </ul>
+                        </div>
+                        <div class="info-section">
+                            <h4>Current Tool</h4>
+                            <div id="current-tool">None selected</div>
+                        </div>
+
+                        <div class="info-section">
+                            <h4>Tool Details</h4>
+                            <div id="tool-details">No details available</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

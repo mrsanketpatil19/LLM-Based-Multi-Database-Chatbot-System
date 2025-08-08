@@ -1,0 +1,2001 @@
+visit_id,patient_id,date,reason
+1,706,2024-07-17,Diabetes Follow-up
+2,638,2023-08-14,Chest Pain
+3,625,2024-06-19,Shortness of Breath
+4,436,2023-10-16,Hypertension
+5,279,2023-10-15,Chest Pain
+6,439,2023-10-21,Diabetes Follow-up
+7,822,2024-12-13,Routine Checkup
+8,285,2024-05-14,Routine Checkup
+9,161,2024-02-06,Routine Checkup
+10,328,2024-06-02,Hypertension
+11,132,2024-07-22,Shortness of Breath
+12,893,2023-08-20,Fatigue
+13,406,2024-07-19,Routine Checkup
+14,477,2024-10-22,Shortness of Breath
+15,544,2024-03-26,Chest Pain
+16,31,2023-10-14,Shortness of Breath
+17,504,2024-02-03,Diabetes Follow-up
+18,541,2025-05-21,Diabetes Follow-up
+19,869,2024-12-28,Hypertension
+20,133,2024-09-25,Routine Checkup
+21,813,2024-08-10,Routine Checkup
+22,426,2023-10-31,Chest Pain
+23,161,2024-07-29,Chest Pain
+24,341,2024-07-04,Diabetes Follow-up
+25,755,2023-10-03,Hypertension
+26,391,2023-12-19,Asthma
+27,86,2024-07-31,Diabetes Follow-up
+28,118,2024-07-29,Diabetes Follow-up
+29,887,2024-07-31,Asthma
+30,48,2025-01-18,Routine Checkup
+31,701,2024-02-14,Chest Pain
+32,391,2024-01-02,Chest Pain
+33,999,2025-05-10,Shortness of Breath
+34,810,2025-01-31,Hypertension
+35,669,2023-11-22,Chest Pain
+36,32,2023-11-08,Routine Checkup
+37,477,2024-09-23,Hypertension
+38,30,2025-05-02,Routine Checkup
+39,992,2023-10-27,Fatigue
+40,562,2025-05-01,Hypertension
+41,185,2024-01-09,Hypertension
+42,314,2024-11-05,Asthma
+43,921,2023-11-07,Routine Checkup
+44,698,2024-05-26,Hypertension
+45,660,2024-07-15,Hypertension
+46,55,2024-09-08,Asthma
+47,887,2025-06-09,Chest Pain
+48,440,2024-07-28,Routine Checkup
+49,654,2024-11-13,Fatigue
+50,851,2024-02-21,Diabetes Follow-up
+51,309,2024-07-23,Hypertension
+52,406,2023-09-02,Hypertension
+53,800,2024-10-10,Hypertension
+54,209,2023-08-12,Fatigue
+55,537,2024-06-30,Asthma
+56,410,2023-12-23,Chest Pain
+57,946,2025-03-26,Shortness of Breath
+58,571,2023-11-21,Fatigue
+59,619,2025-07-07,Hypertension
+60,228,2024-11-11,Fatigue
+61,56,2025-05-06,Chest Pain
+62,240,2025-02-23,Fatigue
+63,911,2024-02-26,Diabetes Follow-up
+64,371,2024-09-29,Routine Checkup
+65,175,2024-11-30,Chest Pain
+66,952,2024-03-20,Shortness of Breath
+67,852,2024-08-21,Chest Pain
+68,355,2025-04-25,Routine Checkup
+69,331,2023-08-18,Chest Pain
+70,227,2024-03-26,Diabetes Follow-up
+71,880,2025-02-24,Chest Pain
+72,925,2024-07-31,Fatigue
+73,915,2024-01-28,Asthma
+74,837,2025-01-15,Fatigue
+75,540,2024-05-11,Shortness of Breath
+76,490,2024-08-19,Shortness of Breath
+77,44,2024-01-17,Diabetes Follow-up
+78,906,2025-06-17,Routine Checkup
+79,252,2024-01-26,Shortness of Breath
+80,882,2025-03-24,Diabetes Follow-up
+81,858,2024-03-16,Fatigue
+82,392,2025-02-04,Asthma
+83,305,2024-08-28,Diabetes Follow-up
+84,472,2024-10-24,Routine Checkup
+85,979,2024-01-23,Diabetes Follow-up
+86,435,2024-06-19,Chest Pain
+87,921,2023-11-06,Chest Pain
+88,436,2024-12-12,Diabetes Follow-up
+89,889,2024-06-15,Chest Pain
+90,221,2024-08-20,Diabetes Follow-up
+91,152,2024-11-04,Shortness of Breath
+92,468,2025-04-20,Shortness of Breath
+93,346,2023-10-17,Chest Pain
+94,285,2024-11-24,Chest Pain
+95,967,2023-11-25,Diabetes Follow-up
+96,999,2024-06-08,Hypertension
+97,651,2025-05-19,Fatigue
+98,690,2024-05-01,Asthma
+99,422,2024-10-01,Fatigue
+100,583,2024-05-18,Diabetes Follow-up
+101,845,2023-10-05,Asthma
+102,186,2025-01-01,Asthma
+103,452,2023-08-25,Chest Pain
+104,245,2025-07-08,Hypertension
+105,488,2023-11-13,Fatigue
+106,397,2024-08-12,Diabetes Follow-up
+107,42,2024-08-02,Fatigue
+108,459,2025-03-03,Chest Pain
+109,217,2025-04-06,Routine Checkup
+110,594,2023-10-01,Asthma
+111,769,2025-06-14,Diabetes Follow-up
+112,983,2024-08-30,Shortness of Breath
+113,329,2024-08-28,Hypertension
+114,588,2025-02-16,Shortness of Breath
+115,653,2025-04-02,Chest Pain
+116,129,2025-03-03,Hypertension
+117,714,2025-07-20,Shortness of Breath
+118,994,2024-04-01,Diabetes Follow-up
+119,832,2025-04-15,Chest Pain
+120,392,2025-06-05,Routine Checkup
+121,878,2023-08-04,Fatigue
+122,365,2023-09-15,Routine Checkup
+123,460,2024-12-13,Chest Pain
+124,275,2024-02-10,Asthma
+125,388,2024-06-02,Chest Pain
+126,442,2025-03-12,Diabetes Follow-up
+127,628,2024-02-11,Hypertension
+128,252,2024-03-18,Asthma
+129,310,2023-10-05,Routine Checkup
+130,292,2024-10-07,Fatigue
+131,580,2025-04-28,Fatigue
+132,595,2024-08-24,Diabetes Follow-up
+133,796,2025-05-06,Fatigue
+134,518,2023-11-25,Shortness of Breath
+135,543,2023-12-20,Routine Checkup
+136,73,2024-09-18,Asthma
+137,128,2024-01-23,Asthma
+138,379,2025-03-05,Asthma
+139,287,2025-06-13,Hypertension
+140,327,2024-06-27,Hypertension
+141,790,2025-06-09,Chest Pain
+142,517,2024-06-05,Chest Pain
+143,857,2023-12-11,Shortness of Breath
+144,780,2025-03-25,Hypertension
+145,27,2024-10-18,Diabetes Follow-up
+146,90,2023-08-02,Hypertension
+147,215,2024-05-21,Routine Checkup
+148,956,2024-07-13,Hypertension
+149,509,2024-11-22,Chest Pain
+150,818,2024-03-25,Chest Pain
+151,82,2023-08-09,Fatigue
+152,388,2024-03-28,Hypertension
+153,210,2023-09-18,Shortness of Breath
+154,983,2023-11-17,Hypertension
+155,216,2025-04-25,Fatigue
+156,770,2024-01-30,Routine Checkup
+157,258,2024-01-27,Chest Pain
+158,548,2023-08-17,Fatigue
+159,130,2025-04-21,Shortness of Breath
+160,615,2023-10-20,Hypertension
+161,479,2024-05-21,Fatigue
+162,869,2024-04-05,Asthma
+163,350,2024-03-06,Asthma
+164,270,2024-12-29,Diabetes Follow-up
+165,932,2024-01-16,Hypertension
+166,102,2023-08-25,Shortness of Breath
+167,326,2024-02-27,Diabetes Follow-up
+168,752,2023-10-10,Diabetes Follow-up
+169,422,2024-04-13,Diabetes Follow-up
+170,284,2025-04-13,Diabetes Follow-up
+171,962,2025-06-15,Shortness of Breath
+172,31,2023-08-05,Hypertension
+173,400,2023-08-08,Hypertension
+174,733,2024-03-21,Diabetes Follow-up
+175,228,2024-03-23,Asthma
+176,698,2023-12-23,Asthma
+177,472,2024-11-09,Fatigue
+178,56,2024-07-07,Shortness of Breath
+179,774,2024-02-03,Asthma
+180,224,2024-12-08,Shortness of Breath
+181,541,2024-03-27,Routine Checkup
+182,552,2023-07-26,Shortness of Breath
+183,254,2024-11-23,Fatigue
+184,174,2025-06-17,Shortness of Breath
+185,536,2025-04-13,Diabetes Follow-up
+186,404,2024-12-13,Shortness of Breath
+187,982,2024-12-16,Fatigue
+188,272,2024-08-14,Fatigue
+189,914,2024-01-07,Asthma
+190,410,2024-09-19,Asthma
+191,705,2024-12-05,Hypertension
+192,775,2025-02-08,Routine Checkup
+193,644,2025-02-06,Chest Pain
+194,645,2024-01-20,Routine Checkup
+195,928,2024-03-03,Hypertension
+196,709,2024-02-05,Diabetes Follow-up
+197,468,2024-12-15,Asthma
+198,545,2025-05-07,Routine Checkup
+199,114,2024-05-08,Chest Pain
+200,425,2025-02-12,Hypertension
+201,343,2024-08-23,Diabetes Follow-up
+202,24,2024-01-20,Chest Pain
+203,888,2025-02-26,Routine Checkup
+204,27,2025-05-19,Hypertension
+205,397,2023-09-01,Hypertension
+206,669,2025-05-04,Chest Pain
+207,571,2024-01-27,Asthma
+208,695,2025-05-25,Diabetes Follow-up
+209,683,2025-01-04,Routine Checkup
+210,351,2025-05-10,Shortness of Breath
+211,996,2024-09-07,Routine Checkup
+212,210,2025-05-23,Asthma
+213,839,2024-10-18,Fatigue
+214,278,2025-04-28,Hypertension
+215,579,2024-03-28,Fatigue
+216,162,2024-11-20,Hypertension
+217,812,2024-03-31,Hypertension
+218,947,2024-04-17,Routine Checkup
+219,136,2023-08-10,Hypertension
+220,609,2023-10-11,Asthma
+221,140,2024-02-09,Diabetes Follow-up
+222,88,2024-10-07,Chest Pain
+223,39,2025-04-05,Shortness of Breath
+224,206,2025-01-21,Asthma
+225,647,2023-09-25,Fatigue
+226,673,2024-10-15,Diabetes Follow-up
+227,56,2024-08-21,Asthma
+228,873,2024-05-05,Chest Pain
+229,432,2025-05-05,Diabetes Follow-up
+230,132,2024-04-25,Diabetes Follow-up
+231,152,2025-06-21,Routine Checkup
+232,311,2025-07-18,Asthma
+233,597,2024-12-23,Diabetes Follow-up
+234,919,2025-05-11,Asthma
+235,193,2025-07-12,Fatigue
+236,341,2024-04-22,Hypertension
+237,993,2024-12-10,Chest Pain
+238,560,2023-12-21,Shortness of Breath
+239,646,2025-03-06,Diabetes Follow-up
+240,236,2025-03-25,Shortness of Breath
+241,61,2025-07-01,Asthma
+242,286,2023-09-09,Hypertension
+243,923,2024-01-02,Routine Checkup
+244,783,2025-06-25,Fatigue
+245,30,2024-07-31,Routine Checkup
+246,550,2025-05-14,Routine Checkup
+247,162,2024-10-20,Diabetes Follow-up
+248,923,2023-07-29,Diabetes Follow-up
+249,532,2024-07-24,Fatigue
+250,720,2023-10-01,Shortness of Breath
+251,40,2025-02-23,Fatigue
+252,775,2023-11-16,Fatigue
+253,863,2024-07-08,Asthma
+254,51,2023-12-22,Chest Pain
+255,799,2024-04-30,Asthma
+256,376,2024-11-15,Diabetes Follow-up
+257,367,2025-01-11,Routine Checkup
+258,242,2025-03-30,Chest Pain
+259,592,2023-10-04,Hypertension
+260,110,2024-03-22,Shortness of Breath
+261,471,2024-11-30,Chest Pain
+262,46,2025-03-29,Diabetes Follow-up
+263,868,2024-11-05,Diabetes Follow-up
+264,892,2024-02-07,Diabetes Follow-up
+265,322,2024-11-06,Diabetes Follow-up
+266,456,2023-12-15,Diabetes Follow-up
+267,527,2024-05-02,Chest Pain
+268,493,2024-07-14,Asthma
+269,643,2025-01-02,Hypertension
+270,381,2023-08-23,Routine Checkup
+271,714,2025-06-03,Chest Pain
+272,397,2024-01-04,Routine Checkup
+273,708,2023-12-21,Shortness of Breath
+274,863,2024-06-10,Asthma
+275,650,2024-01-24,Fatigue
+276,293,2025-04-24,Shortness of Breath
+277,913,2023-08-11,Diabetes Follow-up
+278,319,2024-05-21,Fatigue
+279,903,2025-06-16,Chest Pain
+280,376,2024-09-29,Asthma
+281,501,2025-07-04,Shortness of Breath
+282,480,2025-02-22,Routine Checkup
+283,560,2024-09-06,Chest Pain
+284,543,2025-04-21,Shortness of Breath
+285,585,2024-03-20,Asthma
+286,49,2025-06-11,Shortness of Breath
+287,401,2025-03-13,Diabetes Follow-up
+288,855,2023-11-29,Routine Checkup
+289,394,2023-08-31,Fatigue
+290,572,2024-02-07,Fatigue
+291,197,2023-11-08,Shortness of Breath
+292,964,2025-01-06,Fatigue
+293,240,2024-07-28,Routine Checkup
+294,414,2023-08-13,Fatigue
+295,384,2024-07-18,Hypertension
+296,884,2024-11-16,Asthma
+297,694,2024-10-25,Shortness of Breath
+298,333,2025-01-10,Shortness of Breath
+299,861,2024-05-25,Chest Pain
+300,598,2024-10-05,Routine Checkup
+301,744,2024-02-22,Asthma
+302,933,2023-07-25,Diabetes Follow-up
+303,817,2025-07-13,Routine Checkup
+304,578,2025-05-26,Hypertension
+305,885,2024-11-05,Shortness of Breath
+306,521,2024-05-19,Routine Checkup
+307,373,2023-08-16,Chest Pain
+308,702,2024-06-12,Asthma
+309,310,2024-01-01,Hypertension
+310,594,2024-01-03,Chest Pain
+311,723,2023-09-27,Hypertension
+312,908,2025-07-09,Fatigue
+313,483,2025-01-09,Hypertension
+314,911,2024-03-07,Routine Checkup
+315,952,2024-08-06,Chest Pain
+316,53,2025-01-12,Routine Checkup
+317,105,2024-05-11,Fatigue
+318,52,2023-09-22,Chest Pain
+319,326,2025-04-12,Hypertension
+320,140,2024-05-17,Diabetes Follow-up
+321,769,2024-05-27,Asthma
+322,509,2025-01-06,Diabetes Follow-up
+323,348,2024-08-18,Routine Checkup
+324,497,2025-01-15,Chest Pain
+325,780,2025-04-04,Fatigue
+326,885,2024-09-06,Fatigue
+327,699,2025-07-13,Hypertension
+328,434,2025-01-19,Fatigue
+329,457,2025-06-14,Fatigue
+330,754,2024-01-27,Routine Checkup
+331,738,2025-02-27,Chest Pain
+332,21,2024-05-29,Diabetes Follow-up
+333,841,2024-03-02,Fatigue
+334,957,2025-02-25,Hypertension
+335,933,2024-07-13,Chest Pain
+336,84,2024-09-13,Fatigue
+337,237,2024-12-30,Diabetes Follow-up
+338,839,2023-07-30,Diabetes Follow-up
+339,133,2025-06-11,Fatigue
+340,580,2024-03-17,Routine Checkup
+341,361,2023-12-01,Asthma
+342,469,2024-03-16,Shortness of Breath
+343,950,2024-01-19,Asthma
+344,401,2024-09-07,Asthma
+345,68,2024-05-24,Routine Checkup
+346,626,2025-05-13,Hypertension
+347,101,2023-12-08,Shortness of Breath
+348,951,2024-07-21,Diabetes Follow-up
+349,148,2023-10-22,Shortness of Breath
+350,971,2025-06-30,Shortness of Breath
+351,57,2025-03-10,Fatigue
+352,87,2025-02-08,Shortness of Breath
+353,837,2024-11-09,Shortness of Breath
+354,805,2023-12-16,Routine Checkup
+355,649,2025-02-10,Hypertension
+356,938,2024-10-21,Asthma
+357,248,2024-05-19,Routine Checkup
+358,50,2025-01-05,Hypertension
+359,38,2025-07-05,Chest Pain
+360,903,2023-08-29,Diabetes Follow-up
+361,176,2024-07-29,Shortness of Breath
+362,863,2023-11-04,Hypertension
+363,103,2023-10-01,Routine Checkup
+364,748,2023-10-26,Asthma
+365,263,2024-06-14,Asthma
+366,32,2025-05-26,Chest Pain
+367,314,2025-03-08,Diabetes Follow-up
+368,983,2024-01-18,Shortness of Breath
+369,451,2024-10-20,Fatigue
+370,79,2024-05-07,Fatigue
+371,850,2025-03-29,Fatigue
+372,371,2024-08-25,Asthma
+373,724,2024-03-11,Routine Checkup
+374,325,2024-04-24,Fatigue
+375,690,2023-12-19,Fatigue
+376,145,2023-12-24,Diabetes Follow-up
+377,300,2024-01-24,Chest Pain
+378,875,2024-02-08,Asthma
+379,602,2024-08-04,Chest Pain
+380,321,2025-05-05,Chest Pain
+381,53,2024-02-16,Routine Checkup
+382,828,2024-02-08,Shortness of Breath
+383,544,2023-07-31,Routine Checkup
+384,682,2023-12-15,Chest Pain
+385,938,2024-07-14,Asthma
+386,906,2024-02-19,Asthma
+387,63,2024-07-06,Hypertension
+388,237,2023-09-12,Hypertension
+389,50,2024-06-08,Chest Pain
+390,4,2024-08-07,Chest Pain
+391,182,2025-06-29,Hypertension
+392,481,2023-10-29,Routine Checkup
+393,179,2024-02-09,Hypertension
+394,947,2024-02-29,Asthma
+395,550,2024-11-11,Hypertension
+396,723,2024-08-03,Fatigue
+397,659,2024-12-16,Diabetes Follow-up
+398,379,2024-10-01,Diabetes Follow-up
+399,138,2025-01-06,Diabetes Follow-up
+400,614,2024-06-23,Chest Pain
+401,993,2023-10-23,Chest Pain
+402,487,2023-09-06,Hypertension
+403,264,2025-07-05,Fatigue
+404,691,2024-04-11,Shortness of Breath
+405,670,2024-01-22,Diabetes Follow-up
+406,477,2024-03-09,Chest Pain
+407,677,2023-12-12,Fatigue
+408,166,2024-01-23,Hypertension
+409,982,2024-11-08,Shortness of Breath
+410,634,2023-08-31,Routine Checkup
+411,538,2024-08-29,Shortness of Breath
+412,748,2024-03-17,Routine Checkup
+413,451,2024-07-29,Fatigue
+414,643,2024-09-02,Routine Checkup
+415,834,2025-03-07,Hypertension
+416,638,2024-01-16,Chest Pain
+417,443,2024-06-08,Shortness of Breath
+418,338,2024-06-26,Chest Pain
+419,238,2025-04-22,Hypertension
+420,967,2025-02-11,Hypertension
+421,274,2023-12-01,Chest Pain
+422,829,2024-03-10,Asthma
+423,614,2023-09-06,Chest Pain
+424,918,2024-03-28,Fatigue
+425,428,2023-12-05,Routine Checkup
+426,356,2023-08-14,Diabetes Follow-up
+427,965,2024-12-10,Routine Checkup
+428,868,2023-12-19,Fatigue
+429,690,2025-03-10,Chest Pain
+430,492,2024-12-30,Fatigue
+431,704,2024-11-08,Fatigue
+432,581,2024-02-19,Chest Pain
+433,507,2024-03-09,Hypertension
+434,253,2024-08-27,Hypertension
+435,588,2025-06-05,Shortness of Breath
+436,847,2023-10-06,Fatigue
+437,390,2025-02-25,Hypertension
+438,914,2024-03-04,Routine Checkup
+439,751,2025-06-29,Hypertension
+440,215,2023-10-04,Diabetes Follow-up
+441,743,2023-12-18,Chest Pain
+442,649,2025-03-17,Routine Checkup
+443,226,2025-05-24,Chest Pain
+444,997,2024-05-11,Fatigue
+445,347,2024-06-07,Hypertension
+446,151,2024-01-19,Shortness of Breath
+447,773,2024-10-22,Fatigue
+448,86,2024-03-19,Routine Checkup
+449,178,2025-05-16,Diabetes Follow-up
+450,803,2024-04-16,Shortness of Breath
+451,79,2025-04-08,Fatigue
+452,96,2024-10-02,Asthma
+453,963,2024-10-18,Shortness of Breath
+454,29,2024-12-02,Shortness of Breath
+455,389,2025-06-07,Shortness of Breath
+456,638,2023-08-13,Shortness of Breath
+457,403,2023-10-19,Routine Checkup
+458,44,2024-10-13,Asthma
+459,475,2025-04-02,Routine Checkup
+460,31,2024-10-16,Asthma
+461,652,2024-11-18,Shortness of Breath
+462,438,2025-05-09,Hypertension
+463,106,2024-04-21,Fatigue
+464,180,2025-04-11,Hypertension
+465,346,2025-01-31,Routine Checkup
+466,376,2024-04-02,Fatigue
+467,283,2024-07-07,Fatigue
+468,2,2024-11-17,Fatigue
+469,763,2024-07-30,Hypertension
+470,239,2025-01-08,Routine Checkup
+471,95,2024-10-17,Diabetes Follow-up
+472,378,2024-10-20,Asthma
+473,367,2024-01-26,Fatigue
+474,730,2024-11-20,Shortness of Breath
+475,528,2024-09-26,Asthma
+476,436,2025-03-31,Fatigue
+477,770,2024-03-27,Shortness of Breath
+478,2,2025-07-01,Hypertension
+479,501,2025-04-02,Fatigue
+480,866,2024-11-25,Diabetes Follow-up
+481,828,2025-05-13,Shortness of Breath
+482,586,2023-09-16,Asthma
+483,588,2024-05-22,Diabetes Follow-up
+484,422,2024-09-22,Asthma
+485,589,2025-02-09,Diabetes Follow-up
+486,717,2024-09-05,Fatigue
+487,680,2024-03-11,Hypertension
+488,800,2025-02-23,Chest Pain
+489,697,2025-03-06,Diabetes Follow-up
+490,355,2025-03-25,Shortness of Breath
+491,110,2024-08-14,Routine Checkup
+492,773,2023-09-13,Shortness of Breath
+493,261,2024-03-09,Routine Checkup
+494,408,2023-08-10,Diabetes Follow-up
+495,138,2023-12-22,Routine Checkup
+496,943,2024-10-02,Routine Checkup
+497,876,2024-01-24,Diabetes Follow-up
+498,779,2023-07-24,Shortness of Breath
+499,921,2023-08-07,Asthma
+500,509,2023-11-18,Asthma
+501,869,2024-11-18,Hypertension
+502,728,2025-03-22,Shortness of Breath
+503,884,2025-02-04,Routine Checkup
+504,980,2023-10-17,Shortness of Breath
+505,690,2024-02-20,Routine Checkup
+506,90,2024-10-12,Diabetes Follow-up
+507,595,2024-04-18,Shortness of Breath
+508,255,2024-08-10,Diabetes Follow-up
+509,742,2024-03-02,Asthma
+510,624,2024-05-12,Hypertension
+511,923,2024-06-30,Hypertension
+512,620,2025-01-04,Routine Checkup
+513,419,2024-11-07,Hypertension
+514,910,2023-08-26,Diabetes Follow-up
+515,815,2024-03-27,Hypertension
+516,753,2023-09-20,Shortness of Breath
+517,331,2024-02-06,Asthma
+518,381,2024-05-08,Diabetes Follow-up
+519,318,2024-04-06,Asthma
+520,599,2023-08-23,Fatigue
+521,519,2025-07-02,Chest Pain
+522,518,2024-05-30,Asthma
+523,578,2023-10-23,Chest Pain
+524,881,2024-02-25,Fatigue
+525,967,2024-09-20,Chest Pain
+526,57,2025-05-09,Fatigue
+527,740,2025-03-26,Shortness of Breath
+528,790,2024-01-14,Shortness of Breath
+529,673,2025-07-15,Chest Pain
+530,137,2023-08-16,Fatigue
+531,598,2024-08-23,Fatigue
+532,14,2024-10-09,Chest Pain
+533,554,2024-10-09,Chest Pain
+534,335,2024-05-19,Shortness of Breath
+535,224,2024-11-05,Hypertension
+536,785,2024-08-28,Routine Checkup
+537,387,2024-05-08,Fatigue
+538,90,2025-01-24,Chest Pain
+539,888,2024-04-07,Diabetes Follow-up
+540,596,2024-01-19,Chest Pain
+541,690,2024-07-19,Routine Checkup
+542,512,2024-04-18,Hypertension
+543,713,2024-10-27,Asthma
+544,358,2025-05-03,Routine Checkup
+545,163,2023-07-22,Chest Pain
+546,240,2023-11-20,Shortness of Breath
+547,722,2024-10-27,Diabetes Follow-up
+548,611,2024-06-27,Asthma
+549,686,2024-01-30,Diabetes Follow-up
+550,330,2025-06-26,Shortness of Breath
+551,76,2024-02-05,Shortness of Breath
+552,55,2024-01-14,Diabetes Follow-up
+553,749,2024-04-07,Routine Checkup
+554,900,2024-05-01,Asthma
+555,192,2023-08-23,Routine Checkup
+556,7,2024-07-20,Fatigue
+557,89,2023-09-19,Diabetes Follow-up
+558,359,2024-08-30,Routine Checkup
+559,802,2024-02-27,Asthma
+560,415,2024-08-15,Shortness of Breath
+561,872,2024-11-21,Chest Pain
+562,728,2024-05-30,Shortness of Breath
+563,473,2024-01-30,Chest Pain
+564,199,2025-06-09,Asthma
+565,988,2024-01-02,Asthma
+566,775,2025-03-04,Asthma
+567,923,2024-06-16,Hypertension
+568,776,2025-02-01,Shortness of Breath
+569,302,2025-05-28,Chest Pain
+570,357,2023-09-25,Chest Pain
+571,454,2023-11-03,Hypertension
+572,527,2025-02-21,Diabetes Follow-up
+573,600,2024-10-09,Diabetes Follow-up
+574,999,2023-11-29,Diabetes Follow-up
+575,391,2024-09-02,Routine Checkup
+576,93,2024-08-02,Hypertension
+577,326,2024-02-09,Shortness of Breath
+578,755,2025-05-31,Routine Checkup
+579,623,2025-02-03,Chest Pain
+580,860,2024-07-17,Hypertension
+581,953,2024-05-26,Routine Checkup
+582,531,2024-02-17,Diabetes Follow-up
+583,618,2025-01-20,Hypertension
+584,427,2023-07-22,Routine Checkup
+585,945,2025-02-09,Fatigue
+586,379,2025-01-09,Diabetes Follow-up
+587,527,2024-01-04,Shortness of Breath
+588,73,2023-11-24,Asthma
+589,28,2024-05-14,Shortness of Breath
+590,49,2023-10-28,Routine Checkup
+591,3,2023-08-03,Diabetes Follow-up
+592,702,2025-04-19,Fatigue
+593,988,2024-04-22,Shortness of Breath
+594,842,2024-06-03,Diabetes Follow-up
+595,143,2023-10-11,Hypertension
+596,619,2025-01-24,Fatigue
+597,419,2023-07-27,Asthma
+598,168,2024-02-04,Asthma
+599,791,2024-06-22,Fatigue
+600,64,2024-06-13,Hypertension
+601,667,2024-09-04,Shortness of Breath
+602,920,2025-06-21,Asthma
+603,488,2024-08-04,Routine Checkup
+604,95,2023-10-10,Hypertension
+605,421,2024-08-13,Diabetes Follow-up
+606,305,2024-01-18,Chest Pain
+607,854,2024-12-01,Routine Checkup
+608,745,2025-07-19,Fatigue
+609,397,2024-12-31,Fatigue
+610,173,2024-01-18,Chest Pain
+611,949,2024-07-29,Hypertension
+612,767,2025-02-09,Hypertension
+613,590,2024-12-04,Routine Checkup
+614,930,2023-10-07,Shortness of Breath
+615,114,2025-07-02,Diabetes Follow-up
+616,348,2023-08-06,Diabetes Follow-up
+617,43,2024-02-20,Shortness of Breath
+618,512,2025-05-18,Shortness of Breath
+619,112,2024-05-20,Shortness of Breath
+620,900,2024-08-28,Routine Checkup
+621,902,2024-12-19,Hypertension
+622,346,2024-06-29,Fatigue
+623,939,2025-02-26,Fatigue
+624,298,2023-12-28,Diabetes Follow-up
+625,744,2024-04-15,Asthma
+626,995,2024-02-09,Diabetes Follow-up
+627,714,2024-03-07,Hypertension
+628,247,2024-06-12,Hypertension
+629,90,2024-09-24,Shortness of Breath
+630,92,2024-02-16,Asthma
+631,142,2023-12-01,Chest Pain
+632,181,2023-09-10,Chest Pain
+633,267,2025-06-25,Fatigue
+634,633,2024-11-20,Fatigue
+635,496,2024-01-07,Fatigue
+636,838,2025-01-11,Diabetes Follow-up
+637,75,2025-07-05,Shortness of Breath
+638,152,2023-08-23,Routine Checkup
+639,809,2025-01-21,Fatigue
+640,280,2024-06-30,Diabetes Follow-up
+641,81,2024-12-02,Routine Checkup
+642,4,2024-12-04,Shortness of Breath
+643,800,2024-05-27,Diabetes Follow-up
+644,217,2024-10-12,Diabetes Follow-up
+645,932,2024-10-24,Routine Checkup
+646,989,2024-05-06,Chest Pain
+647,963,2024-09-27,Fatigue
+648,537,2024-04-18,Fatigue
+649,621,2024-11-26,Routine Checkup
+650,5,2024-11-05,Routine Checkup
+651,910,2023-12-30,Hypertension
+652,370,2024-10-16,Asthma
+653,750,2024-03-11,Fatigue
+654,741,2023-11-06,Fatigue
+655,672,2024-03-28,Fatigue
+656,76,2024-07-30,Routine Checkup
+657,857,2024-01-01,Chest Pain
+658,287,2024-03-13,Hypertension
+659,566,2023-08-03,Hypertension
+660,550,2025-03-07,Fatigue
+661,186,2024-07-10,Chest Pain
+662,213,2024-06-01,Routine Checkup
+663,536,2024-05-31,Routine Checkup
+664,412,2024-03-31,Hypertension
+665,631,2023-12-29,Routine Checkup
+666,938,2025-07-21,Asthma
+667,156,2024-12-21,Chest Pain
+668,784,2025-07-11,Chest Pain
+669,358,2023-08-18,Fatigue
+670,802,2025-02-26,Routine Checkup
+671,443,2023-11-26,Chest Pain
+672,830,2024-04-03,Diabetes Follow-up
+673,495,2024-10-19,Shortness of Breath
+674,21,2024-02-02,Hypertension
+675,461,2023-10-21,Shortness of Breath
+676,285,2024-07-10,Hypertension
+677,633,2025-04-17,Asthma
+678,293,2025-02-18,Asthma
+679,316,2024-02-22,Hypertension
+680,579,2024-01-08,Chest Pain
+681,898,2023-08-05,Hypertension
+682,439,2025-04-08,Routine Checkup
+683,721,2024-03-22,Shortness of Breath
+684,323,2023-11-13,Chest Pain
+685,426,2025-02-04,Hypertension
+686,611,2023-09-09,Fatigue
+687,209,2023-09-21,Diabetes Follow-up
+688,873,2025-02-14,Fatigue
+689,646,2024-03-28,Shortness of Breath
+690,280,2024-12-30,Diabetes Follow-up
+691,142,2025-02-19,Fatigue
+692,706,2024-11-26,Shortness of Breath
+693,915,2024-08-14,Fatigue
+694,401,2025-04-26,Hypertension
+695,200,2023-09-28,Asthma
+696,5,2023-12-26,Routine Checkup
+697,600,2024-12-12,Diabetes Follow-up
+698,817,2023-12-14,Fatigue
+699,364,2024-04-09,Chest Pain
+700,711,2023-12-31,Hypertension
+701,818,2025-01-20,Shortness of Breath
+702,427,2024-03-18,Shortness of Breath
+703,554,2023-07-29,Diabetes Follow-up
+704,918,2024-07-10,Chest Pain
+705,270,2024-04-24,Chest Pain
+706,707,2025-01-05,Routine Checkup
+707,865,2024-07-26,Routine Checkup
+708,358,2024-11-17,Hypertension
+709,891,2024-10-13,Hypertension
+710,249,2024-09-17,Chest Pain
+711,324,2023-11-22,Routine Checkup
+712,178,2024-06-08,Routine Checkup
+713,764,2025-02-16,Asthma
+714,764,2024-01-23,Shortness of Breath
+715,979,2024-10-30,Chest Pain
+716,145,2024-09-02,Diabetes Follow-up
+717,848,2023-12-26,Diabetes Follow-up
+718,393,2024-11-05,Asthma
+719,139,2024-02-24,Asthma
+720,978,2025-05-16,Shortness of Breath
+721,468,2025-02-03,Shortness of Breath
+722,719,2023-12-09,Hypertension
+723,954,2023-08-28,Hypertension
+724,521,2023-09-04,Fatigue
+725,497,2025-05-05,Routine Checkup
+726,749,2023-07-30,Shortness of Breath
+727,425,2023-08-11,Asthma
+728,155,2023-11-21,Shortness of Breath
+729,32,2024-12-05,Shortness of Breath
+730,227,2025-05-25,Diabetes Follow-up
+731,999,2023-09-26,Routine Checkup
+732,779,2025-03-04,Shortness of Breath
+733,284,2024-05-08,Hypertension
+734,222,2024-01-23,Fatigue
+735,458,2023-07-23,Routine Checkup
+736,762,2024-02-25,Hypertension
+737,248,2025-02-28,Routine Checkup
+738,233,2025-04-14,Chest Pain
+739,992,2024-09-24,Chest Pain
+740,933,2025-02-09,Diabetes Follow-up
+741,781,2023-10-21,Fatigue
+742,428,2024-01-24,Asthma
+743,225,2023-11-27,Fatigue
+744,910,2024-12-14,Diabetes Follow-up
+745,178,2023-11-03,Hypertension
+746,447,2024-08-02,Hypertension
+747,942,2023-11-21,Asthma
+748,17,2024-02-29,Chest Pain
+749,234,2024-11-01,Shortness of Breath
+750,680,2025-02-13,Shortness of Breath
+751,403,2023-12-31,Routine Checkup
+752,526,2023-10-23,Hypertension
+753,198,2024-05-23,Hypertension
+754,436,2025-03-12,Diabetes Follow-up
+755,921,2025-05-23,Routine Checkup
+756,455,2025-03-31,Chest Pain
+757,331,2024-08-03,Hypertension
+758,682,2025-07-07,Asthma
+759,769,2025-06-23,Fatigue
+760,815,2024-08-05,Hypertension
+761,132,2025-07-15,Diabetes Follow-up
+762,869,2024-02-07,Chest Pain
+763,877,2024-02-26,Fatigue
+764,548,2024-01-23,Routine Checkup
+765,717,2025-02-05,Hypertension
+766,125,2023-10-19,Asthma
+767,547,2023-09-07,Shortness of Breath
+768,288,2023-09-03,Routine Checkup
+769,91,2025-07-06,Asthma
+770,660,2025-03-22,Shortness of Breath
+771,913,2023-11-28,Asthma
+772,902,2023-10-05,Diabetes Follow-up
+773,102,2024-12-18,Shortness of Breath
+774,336,2024-12-26,Chest Pain
+775,756,2023-11-04,Hypertension
+776,211,2023-12-04,Asthma
+777,92,2025-07-04,Chest Pain
+778,482,2024-07-20,Fatigue
+779,408,2025-02-13,Chest Pain
+780,920,2024-11-18,Fatigue
+781,109,2023-10-29,Fatigue
+782,211,2023-10-20,Shortness of Breath
+783,380,2025-06-18,Routine Checkup
+784,9,2025-03-07,Asthma
+785,738,2024-10-09,Routine Checkup
+786,753,2024-09-14,Chest Pain
+787,357,2024-03-27,Diabetes Follow-up
+788,260,2024-06-01,Chest Pain
+789,959,2024-04-24,Diabetes Follow-up
+790,110,2025-03-15,Shortness of Breath
+791,635,2023-10-19,Shortness of Breath
+792,476,2025-06-15,Asthma
+793,647,2024-07-06,Fatigue
+794,826,2023-10-30,Fatigue
+795,606,2025-03-27,Fatigue
+796,219,2024-02-21,Hypertension
+797,701,2025-01-13,Diabetes Follow-up
+798,267,2025-05-17,Asthma
+799,48,2023-10-30,Asthma
+800,683,2023-10-18,Diabetes Follow-up
+801,185,2023-09-08,Hypertension
+802,847,2024-06-01,Asthma
+803,344,2024-04-10,Shortness of Breath
+804,92,2024-01-15,Diabetes Follow-up
+805,806,2024-04-23,Routine Checkup
+806,187,2025-06-02,Chest Pain
+807,309,2023-12-16,Diabetes Follow-up
+808,458,2023-08-04,Routine Checkup
+809,942,2024-05-24,Diabetes Follow-up
+810,621,2023-12-02,Asthma
+811,714,2025-04-01,Hypertension
+812,334,2024-02-22,Diabetes Follow-up
+813,530,2024-07-11,Routine Checkup
+814,427,2025-05-05,Routine Checkup
+815,100,2025-04-21,Shortness of Breath
+816,536,2023-08-28,Hypertension
+817,273,2025-03-20,Routine Checkup
+818,103,2024-02-15,Asthma
+819,518,2024-07-18,Diabetes Follow-up
+820,298,2025-07-02,Fatigue
+821,134,2023-11-25,Routine Checkup
+822,53,2025-04-25,Shortness of Breath
+823,229,2025-02-25,Shortness of Breath
+824,381,2023-09-04,Routine Checkup
+825,888,2024-09-23,Fatigue
+826,345,2023-07-22,Routine Checkup
+827,824,2024-07-01,Asthma
+828,22,2024-03-16,Diabetes Follow-up
+829,889,2025-07-09,Fatigue
+830,827,2023-09-03,Hypertension
+831,514,2024-07-10,Routine Checkup
+832,808,2024-08-18,Asthma
+833,930,2024-01-27,Chest Pain
+834,740,2024-04-09,Routine Checkup
+835,661,2024-12-19,Asthma
+836,612,2024-04-25,Shortness of Breath
+837,859,2024-08-02,Asthma
+838,954,2023-12-14,Asthma
+839,647,2024-12-09,Asthma
+840,252,2024-09-07,Routine Checkup
+841,727,2024-07-31,Shortness of Breath
+842,181,2023-10-24,Shortness of Breath
+843,898,2025-03-03,Chest Pain
+844,931,2023-08-05,Diabetes Follow-up
+845,806,2023-07-25,Shortness of Breath
+846,161,2025-05-02,Chest Pain
+847,838,2025-04-19,Diabetes Follow-up
+848,379,2024-02-22,Hypertension
+849,648,2024-02-18,Routine Checkup
+850,410,2024-11-18,Hypertension
+851,505,2023-10-26,Diabetes Follow-up
+852,941,2024-10-19,Asthma
+853,844,2025-01-18,Diabetes Follow-up
+854,729,2025-03-18,Diabetes Follow-up
+855,773,2024-08-18,Asthma
+856,401,2025-02-13,Asthma
+857,635,2024-05-17,Asthma
+858,780,2025-03-24,Hypertension
+859,366,2024-05-10,Asthma
+860,867,2025-01-01,Asthma
+861,204,2025-05-17,Diabetes Follow-up
+862,904,2024-08-02,Diabetes Follow-up
+863,465,2024-10-19,Shortness of Breath
+864,434,2025-01-17,Fatigue
+865,126,2023-07-28,Chest Pain
+866,176,2025-04-17,Routine Checkup
+867,588,2023-12-17,Asthma
+868,724,2024-11-07,Routine Checkup
+869,439,2025-06-26,Shortness of Breath
+870,493,2023-09-15,Routine Checkup
+871,3,2024-04-23,Diabetes Follow-up
+872,184,2024-04-08,Routine Checkup
+873,851,2024-06-02,Diabetes Follow-up
+874,576,2024-06-18,Diabetes Follow-up
+875,229,2023-08-08,Hypertension
+876,306,2025-06-05,Shortness of Breath
+877,950,2025-06-30,Hypertension
+878,823,2024-12-23,Routine Checkup
+879,690,2025-03-12,Fatigue
+880,737,2024-02-16,Shortness of Breath
+881,719,2025-02-12,Routine Checkup
+882,433,2023-09-11,Routine Checkup
+883,281,2024-06-24,Asthma
+884,813,2024-10-04,Routine Checkup
+885,726,2023-10-30,Shortness of Breath
+886,236,2024-09-19,Routine Checkup
+887,710,2023-08-01,Hypertension
+888,817,2024-06-14,Asthma
+889,42,2024-05-19,Diabetes Follow-up
+890,113,2023-10-17,Asthma
+891,861,2023-08-01,Diabetes Follow-up
+892,230,2025-03-28,Asthma
+893,758,2025-06-21,Routine Checkup
+894,15,2024-05-11,Fatigue
+895,963,2023-12-19,Shortness of Breath
+896,470,2025-05-24,Diabetes Follow-up
+897,481,2024-06-10,Shortness of Breath
+898,363,2024-04-07,Fatigue
+899,797,2023-07-30,Chest Pain
+900,677,2024-10-07,Fatigue
+901,204,2024-12-16,Asthma
+902,378,2024-07-18,Fatigue
+903,290,2023-12-16,Diabetes Follow-up
+904,79,2024-05-14,Fatigue
+905,406,2024-10-26,Chest Pain
+906,720,2023-11-21,Diabetes Follow-up
+907,44,2024-06-30,Hypertension
+908,854,2025-02-23,Fatigue
+909,257,2025-05-22,Fatigue
+910,720,2024-03-04,Hypertension
+911,599,2023-09-17,Chest Pain
+912,741,2024-11-15,Asthma
+913,944,2024-08-21,Asthma
+914,956,2023-12-05,Shortness of Breath
+915,552,2023-08-19,Hypertension
+916,271,2024-07-01,Diabetes Follow-up
+917,610,2024-01-12,Chest Pain
+918,429,2024-07-31,Chest Pain
+919,372,2025-07-02,Shortness of Breath
+920,237,2024-05-13,Chest Pain
+921,933,2024-08-27,Hypertension
+922,566,2025-05-15,Hypertension
+923,709,2025-06-16,Asthma
+924,900,2024-09-29,Routine Checkup
+925,592,2024-06-18,Asthma
+926,851,2023-10-15,Routine Checkup
+927,865,2024-03-29,Fatigue
+928,580,2024-11-19,Asthma
+929,651,2023-12-09,Shortness of Breath
+930,864,2025-02-18,Chest Pain
+931,873,2024-07-06,Hypertension
+932,487,2024-09-08,Routine Checkup
+933,204,2024-05-25,Asthma
+934,199,2023-10-10,Asthma
+935,8,2024-06-04,Shortness of Breath
+936,423,2024-10-18,Shortness of Breath
+937,570,2024-01-29,Fatigue
+938,844,2025-06-12,Diabetes Follow-up
+939,150,2023-07-29,Routine Checkup
+940,883,2024-11-22,Diabetes Follow-up
+941,691,2025-02-14,Shortness of Breath
+942,266,2025-07-14,Chest Pain
+943,13,2025-01-09,Shortness of Breath
+944,174,2025-06-07,Diabetes Follow-up
+945,424,2024-01-01,Chest Pain
+946,538,2024-03-04,Fatigue
+947,603,2024-04-07,Diabetes Follow-up
+948,743,2024-06-19,Routine Checkup
+949,494,2023-10-19,Routine Checkup
+950,735,2025-01-25,Asthma
+951,548,2025-06-28,Diabetes Follow-up
+952,618,2025-03-21,Routine Checkup
+953,216,2024-06-14,Shortness of Breath
+954,985,2024-01-03,Fatigue
+955,466,2024-02-29,Routine Checkup
+956,339,2025-02-09,Fatigue
+957,177,2024-02-25,Diabetes Follow-up
+958,405,2025-06-19,Hypertension
+959,405,2024-09-02,Routine Checkup
+960,127,2024-06-02,Routine Checkup
+961,75,2024-05-02,Asthma
+962,859,2024-08-24,Routine Checkup
+963,516,2023-09-05,Chest Pain
+964,978,2025-06-07,Chest Pain
+965,493,2023-12-08,Routine Checkup
+966,184,2025-04-08,Fatigue
+967,400,2025-05-22,Shortness of Breath
+968,843,2024-07-02,Diabetes Follow-up
+969,712,2024-01-08,Shortness of Breath
+970,40,2025-06-05,Routine Checkup
+971,551,2023-09-27,Hypertension
+972,834,2023-10-30,Routine Checkup
+973,655,2024-04-15,Chest Pain
+974,416,2024-02-27,Shortness of Breath
+975,735,2024-02-22,Asthma
+976,186,2023-10-07,Routine Checkup
+977,505,2025-05-06,Asthma
+978,447,2023-12-14,Hypertension
+979,996,2024-04-13,Shortness of Breath
+980,639,2023-09-19,Diabetes Follow-up
+981,117,2025-06-30,Routine Checkup
+982,22,2023-08-24,Routine Checkup
+983,217,2024-10-17,Diabetes Follow-up
+984,999,2023-11-18,Asthma
+985,92,2024-11-22,Diabetes Follow-up
+986,613,2024-06-28,Asthma
+987,246,2023-10-24,Hypertension
+988,925,2024-07-02,Chest Pain
+989,485,2024-08-09,Diabetes Follow-up
+990,398,2025-06-18,Chest Pain
+991,421,2023-12-02,Routine Checkup
+992,415,2024-08-22,Shortness of Breath
+993,587,2024-05-08,Hypertension
+994,471,2023-11-30,Fatigue
+995,631,2024-09-20,Chest Pain
+996,319,2024-09-05,Fatigue
+997,370,2024-08-03,Shortness of Breath
+998,298,2024-10-01,Asthma
+999,108,2023-08-02,Asthma
+1000,852,2025-07-08,Diabetes Follow-up
+1001,251,2023-08-23,Diabetes Follow-up
+1002,543,2025-03-29,Chest Pain
+1003,692,2024-09-01,Routine Checkup
+1004,871,2024-04-29,Asthma
+1005,459,2025-01-15,Diabetes Follow-up
+1006,250,2024-12-14,Hypertension
+1007,305,2024-10-27,Routine Checkup
+1008,996,2023-08-28,Shortness of Breath
+1009,566,2024-06-18,Hypertension
+1010,831,2023-12-05,Diabetes Follow-up
+1011,65,2025-03-02,Hypertension
+1012,577,2024-11-04,Hypertension
+1013,839,2024-07-22,Asthma
+1014,819,2023-12-18,Asthma
+1015,853,2024-04-16,Diabetes Follow-up
+1016,88,2025-07-11,Fatigue
+1017,173,2024-02-09,Chest Pain
+1018,782,2024-01-05,Hypertension
+1019,714,2024-01-07,Diabetes Follow-up
+1020,310,2024-09-21,Hypertension
+1021,618,2024-06-01,Routine Checkup
+1022,220,2025-01-01,Shortness of Breath
+1023,923,2023-09-22,Asthma
+1024,706,2024-07-08,Shortness of Breath
+1025,652,2024-04-25,Asthma
+1026,780,2024-11-24,Routine Checkup
+1027,923,2024-11-10,Fatigue
+1028,953,2023-11-13,Fatigue
+1029,729,2024-02-21,Hypertension
+1030,148,2025-04-13,Shortness of Breath
+1031,134,2025-06-24,Fatigue
+1032,171,2023-12-29,Diabetes Follow-up
+1033,778,2024-10-27,Asthma
+1034,376,2024-10-23,Shortness of Breath
+1035,23,2024-07-26,Diabetes Follow-up
+1036,447,2025-03-11,Diabetes Follow-up
+1037,399,2024-11-29,Diabetes Follow-up
+1038,470,2024-10-11,Chest Pain
+1039,456,2024-06-03,Diabetes Follow-up
+1040,506,2024-05-21,Chest Pain
+1041,151,2024-09-12,Asthma
+1042,902,2025-03-13,Hypertension
+1043,55,2025-04-29,Asthma
+1044,60,2025-02-07,Chest Pain
+1045,129,2023-08-19,Fatigue
+1046,455,2025-06-06,Fatigue
+1047,394,2024-01-05,Chest Pain
+1048,284,2023-12-10,Routine Checkup
+1049,336,2025-05-16,Routine Checkup
+1050,468,2024-07-26,Chest Pain
+1051,203,2024-11-29,Routine Checkup
+1052,57,2025-03-27,Diabetes Follow-up
+1053,700,2025-06-05,Shortness of Breath
+1054,982,2025-04-12,Routine Checkup
+1055,568,2024-12-04,Chest Pain
+1056,185,2025-06-04,Shortness of Breath
+1057,3,2024-08-16,Shortness of Breath
+1058,854,2023-09-29,Routine Checkup
+1059,93,2024-09-20,Diabetes Follow-up
+1060,162,2023-09-29,Routine Checkup
+1061,201,2025-07-19,Routine Checkup
+1062,315,2024-07-15,Diabetes Follow-up
+1063,42,2025-01-09,Fatigue
+1064,266,2025-05-21,Asthma
+1065,282,2024-04-13,Fatigue
+1066,713,2023-12-03,Asthma
+1067,713,2025-02-21,Hypertension
+1068,619,2025-05-27,Routine Checkup
+1069,124,2024-12-24,Chest Pain
+1070,289,2024-03-04,Hypertension
+1071,202,2024-08-23,Routine Checkup
+1072,244,2023-11-01,Routine Checkup
+1073,394,2024-02-02,Hypertension
+1074,500,2024-07-19,Shortness of Breath
+1075,183,2024-07-18,Hypertension
+1076,970,2024-08-04,Hypertension
+1077,703,2025-04-16,Chest Pain
+1078,810,2025-06-19,Shortness of Breath
+1079,928,2024-08-20,Hypertension
+1080,205,2025-03-06,Hypertension
+1081,724,2024-06-30,Asthma
+1082,259,2024-03-08,Shortness of Breath
+1083,702,2024-02-03,Fatigue
+1084,136,2024-05-14,Shortness of Breath
+1085,462,2025-06-08,Chest Pain
+1086,575,2023-10-12,Routine Checkup
+1087,100,2023-10-11,Fatigue
+1088,743,2024-05-03,Shortness of Breath
+1089,672,2024-04-16,Hypertension
+1090,189,2025-03-22,Routine Checkup
+1091,427,2025-05-14,Fatigue
+1092,959,2024-02-19,Asthma
+1093,191,2024-01-18,Asthma
+1094,525,2024-01-31,Routine Checkup
+1095,590,2025-03-29,Routine Checkup
+1096,735,2024-07-13,Shortness of Breath
+1097,113,2023-10-19,Asthma
+1098,714,2023-11-03,Asthma
+1099,121,2023-11-22,Chest Pain
+1100,145,2023-08-02,Shortness of Breath
+1101,854,2024-04-06,Chest Pain
+1102,702,2024-04-01,Hypertension
+1103,807,2024-01-03,Asthma
+1104,269,2025-02-05,Fatigue
+1105,639,2024-02-29,Diabetes Follow-up
+1106,953,2024-01-19,Chest Pain
+1107,307,2024-10-17,Asthma
+1108,418,2025-04-26,Routine Checkup
+1109,814,2024-11-08,Routine Checkup
+1110,38,2025-07-12,Diabetes Follow-up
+1111,930,2024-11-14,Shortness of Breath
+1112,131,2024-08-21,Asthma
+1113,588,2024-05-28,Routine Checkup
+1114,747,2024-06-28,Diabetes Follow-up
+1115,981,2023-07-23,Routine Checkup
+1116,709,2024-12-27,Diabetes Follow-up
+1117,356,2025-02-19,Shortness of Breath
+1118,586,2024-11-09,Hypertension
+1119,885,2025-05-02,Asthma
+1120,184,2023-12-15,Routine Checkup
+1121,751,2024-01-23,Routine Checkup
+1122,91,2023-08-07,Asthma
+1123,403,2024-07-23,Diabetes Follow-up
+1124,411,2024-10-16,Chest Pain
+1125,532,2023-09-23,Fatigue
+1126,814,2024-06-22,Fatigue
+1127,487,2025-03-07,Routine Checkup
+1128,482,2025-01-16,Shortness of Breath
+1129,772,2025-01-20,Shortness of Breath
+1130,335,2024-09-17,Shortness of Breath
+1131,529,2024-06-16,Hypertension
+1132,112,2025-03-22,Diabetes Follow-up
+1133,625,2024-08-24,Diabetes Follow-up
+1134,385,2024-11-28,Shortness of Breath
+1135,846,2023-11-26,Fatigue
+1136,753,2025-02-12,Chest Pain
+1137,427,2025-05-08,Diabetes Follow-up
+1138,842,2025-06-01,Shortness of Breath
+1139,732,2024-07-03,Routine Checkup
+1140,468,2023-12-18,Diabetes Follow-up
+1141,313,2024-01-12,Chest Pain
+1142,988,2025-02-06,Hypertension
+1143,835,2023-10-12,Shortness of Breath
+1144,367,2024-03-22,Fatigue
+1145,967,2024-08-27,Diabetes Follow-up
+1146,489,2024-01-09,Routine Checkup
+1147,33,2025-02-22,Chest Pain
+1148,495,2025-06-16,Chest Pain
+1149,269,2023-10-14,Fatigue
+1150,423,2023-12-11,Chest Pain
+1151,512,2024-11-01,Fatigue
+1152,170,2024-07-21,Chest Pain
+1153,105,2025-06-11,Shortness of Breath
+1154,26,2025-06-03,Fatigue
+1155,741,2024-04-06,Shortness of Breath
+1156,277,2024-05-02,Hypertension
+1157,718,2024-12-25,Asthma
+1158,486,2025-06-19,Diabetes Follow-up
+1159,634,2024-12-29,Fatigue
+1160,880,2024-12-25,Hypertension
+1161,747,2025-01-30,Shortness of Breath
+1162,677,2024-07-04,Asthma
+1163,939,2024-10-13,Chest Pain
+1164,759,2023-09-29,Chest Pain
+1165,228,2024-03-09,Hypertension
+1166,914,2024-05-06,Diabetes Follow-up
+1167,184,2024-03-01,Chest Pain
+1168,130,2024-03-01,Asthma
+1169,794,2023-12-21,Shortness of Breath
+1170,914,2025-02-16,Shortness of Breath
+1171,579,2024-09-22,Hypertension
+1172,799,2024-03-21,Shortness of Breath
+1173,431,2024-06-09,Fatigue
+1174,965,2024-01-27,Diabetes Follow-up
+1175,33,2024-10-30,Chest Pain
+1176,308,2024-01-12,Chest Pain
+1177,983,2025-03-30,Shortness of Breath
+1178,742,2025-06-29,Asthma
+1179,600,2024-10-29,Chest Pain
+1180,595,2024-01-14,Shortness of Breath
+1181,746,2024-04-11,Routine Checkup
+1182,769,2024-10-24,Shortness of Breath
+1183,485,2023-07-27,Chest Pain
+1184,68,2024-02-23,Routine Checkup
+1185,242,2025-01-01,Chest Pain
+1186,871,2023-12-09,Fatigue
+1187,682,2024-07-05,Hypertension
+1188,879,2024-05-02,Diabetes Follow-up
+1189,737,2024-02-12,Routine Checkup
+1190,906,2024-01-24,Fatigue
+1191,60,2023-08-02,Fatigue
+1192,791,2023-12-10,Shortness of Breath
+1193,17,2024-01-18,Chest Pain
+1194,532,2025-07-21,Fatigue
+1195,420,2025-07-12,Hypertension
+1196,681,2024-10-25,Fatigue
+1197,564,2025-07-18,Routine Checkup
+1198,961,2024-06-23,Hypertension
+1199,259,2023-10-01,Hypertension
+1200,164,2024-03-27,Chest Pain
+1201,945,2025-06-30,Hypertension
+1202,423,2023-08-24,Asthma
+1203,169,2024-01-18,Chest Pain
+1204,958,2025-04-11,Routine Checkup
+1205,600,2024-12-20,Chest Pain
+1206,556,2024-04-09,Chest Pain
+1207,546,2024-03-26,Chest Pain
+1208,839,2023-11-02,Hypertension
+1209,998,2024-11-09,Diabetes Follow-up
+1210,889,2024-10-23,Hypertension
+1211,95,2024-04-03,Chest Pain
+1212,85,2023-09-03,Chest Pain
+1213,443,2024-03-11,Hypertension
+1214,145,2024-09-24,Shortness of Breath
+1215,777,2024-11-22,Routine Checkup
+1216,749,2024-01-16,Diabetes Follow-up
+1217,84,2023-11-24,Asthma
+1218,914,2024-07-20,Chest Pain
+1219,76,2024-10-29,Hypertension
+1220,809,2024-03-12,Asthma
+1221,457,2024-08-31,Chest Pain
+1222,470,2024-11-30,Chest Pain
+1223,635,2023-11-02,Hypertension
+1224,345,2025-06-03,Chest Pain
+1225,187,2024-09-07,Chest Pain
+1226,523,2023-12-11,Diabetes Follow-up
+1227,699,2024-05-26,Shortness of Breath
+1228,538,2023-10-01,Fatigue
+1229,667,2024-08-27,Chest Pain
+1230,118,2024-04-02,Diabetes Follow-up
+1231,574,2024-04-15,Routine Checkup
+1232,670,2023-08-16,Routine Checkup
+1233,1,2024-09-10,Diabetes Follow-up
+1234,284,2023-12-22,Diabetes Follow-up
+1235,785,2024-12-28,Chest Pain
+1236,997,2025-05-13,Hypertension
+1237,189,2023-09-23,Fatigue
+1238,247,2025-01-19,Routine Checkup
+1239,706,2023-11-02,Asthma
+1240,581,2025-06-25,Shortness of Breath
+1241,24,2025-03-25,Fatigue
+1242,970,2024-02-29,Asthma
+1243,564,2023-10-21,Shortness of Breath
+1244,891,2023-10-14,Asthma
+1245,963,2024-06-04,Asthma
+1246,992,2024-07-23,Shortness of Breath
+1247,394,2024-12-10,Chest Pain
+1248,163,2025-02-11,Chest Pain
+1249,160,2023-09-17,Hypertension
+1250,153,2024-06-06,Shortness of Breath
+1251,940,2024-06-11,Shortness of Breath
+1252,22,2023-08-10,Fatigue
+1253,598,2024-03-29,Asthma
+1254,618,2023-08-20,Shortness of Breath
+1255,79,2023-12-18,Asthma
+1256,924,2024-04-23,Chest Pain
+1257,549,2024-04-28,Hypertension
+1258,744,2025-03-19,Asthma
+1259,826,2024-10-19,Shortness of Breath
+1260,737,2025-02-07,Hypertension
+1261,260,2024-12-27,Hypertension
+1262,517,2024-12-25,Chest Pain
+1263,621,2023-09-16,Shortness of Breath
+1264,989,2024-07-25,Routine Checkup
+1265,232,2023-09-08,Routine Checkup
+1266,629,2023-10-23,Chest Pain
+1267,62,2024-04-06,Shortness of Breath
+1268,668,2025-03-13,Hypertension
+1269,828,2023-11-24,Hypertension
+1270,35,2024-08-05,Diabetes Follow-up
+1271,847,2024-02-01,Shortness of Breath
+1272,157,2024-08-21,Shortness of Breath
+1273,297,2024-05-16,Routine Checkup
+1274,103,2024-07-15,Fatigue
+1275,644,2023-07-29,Chest Pain
+1276,684,2024-05-18,Diabetes Follow-up
+1277,478,2024-10-28,Shortness of Breath
+1278,952,2023-11-08,Routine Checkup
+1279,200,2023-08-01,Asthma
+1280,605,2024-05-13,Shortness of Breath
+1281,575,2024-06-30,Hypertension
+1282,903,2023-10-08,Shortness of Breath
+1283,83,2025-05-25,Asthma
+1284,825,2024-12-18,Shortness of Breath
+1285,997,2023-11-15,Diabetes Follow-up
+1286,180,2025-07-13,Chest Pain
+1287,108,2025-01-15,Routine Checkup
+1288,566,2025-04-07,Chest Pain
+1289,195,2024-04-08,Hypertension
+1290,255,2023-08-22,Asthma
+1291,622,2024-01-20,Routine Checkup
+1292,642,2024-03-19,Shortness of Breath
+1293,138,2023-07-24,Shortness of Breath
+1294,297,2025-03-22,Routine Checkup
+1295,440,2024-07-14,Hypertension
+1296,747,2023-12-14,Routine Checkup
+1297,653,2024-10-08,Chest Pain
+1298,612,2024-10-31,Shortness of Breath
+1299,441,2025-02-16,Chest Pain
+1300,152,2024-01-08,Routine Checkup
+1301,583,2024-05-22,Chest Pain
+1302,311,2024-06-29,Routine Checkup
+1303,448,2024-07-28,Fatigue
+1304,926,2024-06-02,Hypertension
+1305,285,2024-07-23,Chest Pain
+1306,658,2024-07-13,Hypertension
+1307,98,2025-01-24,Chest Pain
+1308,716,2025-03-08,Routine Checkup
+1309,961,2024-04-17,Routine Checkup
+1310,670,2023-11-17,Hypertension
+1311,987,2025-04-03,Chest Pain
+1312,416,2025-05-08,Shortness of Breath
+1313,235,2023-10-15,Chest Pain
+1314,925,2024-04-15,Chest Pain
+1315,613,2023-12-15,Fatigue
+1316,613,2025-04-09,Asthma
+1317,140,2025-06-23,Fatigue
+1318,509,2024-06-28,Chest Pain
+1319,994,2024-08-31,Diabetes Follow-up
+1320,218,2024-08-05,Shortness of Breath
+1321,387,2024-12-30,Shortness of Breath
+1322,798,2023-09-22,Chest Pain
+1323,150,2025-01-20,Chest Pain
+1324,420,2024-04-16,Fatigue
+1325,909,2023-12-06,Asthma
+1326,881,2024-05-27,Diabetes Follow-up
+1327,110,2025-06-22,Routine Checkup
+1328,569,2024-07-07,Routine Checkup
+1329,994,2024-08-11,Fatigue
+1330,211,2024-04-09,Chest Pain
+1331,890,2024-09-23,Shortness of Breath
+1332,375,2025-02-26,Asthma
+1333,79,2025-06-07,Fatigue
+1334,792,2025-05-25,Shortness of Breath
+1335,755,2023-08-15,Shortness of Breath
+1336,806,2024-04-20,Chest Pain
+1337,784,2024-11-12,Routine Checkup
+1338,126,2024-07-01,Diabetes Follow-up
+1339,171,2024-07-19,Hypertension
+1340,325,2024-10-01,Asthma
+1341,467,2024-05-05,Chest Pain
+1342,651,2024-04-08,Fatigue
+1343,852,2024-11-08,Asthma
+1344,443,2025-05-07,Asthma
+1345,389,2023-11-16,Chest Pain
+1346,951,2024-11-13,Fatigue
+1347,209,2025-05-20,Chest Pain
+1348,607,2024-04-07,Hypertension
+1349,847,2024-01-27,Shortness of Breath
+1350,145,2025-06-22,Asthma
+1351,42,2024-02-21,Asthma
+1352,395,2024-11-08,Shortness of Breath
+1353,826,2023-11-06,Asthma
+1354,641,2024-02-10,Hypertension
+1355,649,2024-10-19,Routine Checkup
+1356,915,2025-01-09,Diabetes Follow-up
+1357,461,2024-08-10,Fatigue
+1358,171,2024-03-25,Asthma
+1359,744,2024-02-02,Chest Pain
+1360,129,2024-12-09,Diabetes Follow-up
+1361,138,2025-01-30,Fatigue
+1362,539,2025-01-27,Shortness of Breath
+1363,581,2024-01-14,Routine Checkup
+1364,611,2023-09-24,Shortness of Breath
+1365,896,2024-09-16,Asthma
+1366,899,2024-12-13,Routine Checkup
+1367,922,2024-11-29,Diabetes Follow-up
+1368,960,2024-02-25,Routine Checkup
+1369,919,2025-06-05,Asthma
+1370,946,2025-01-06,Hypertension
+1371,415,2024-07-25,Shortness of Breath
+1372,342,2024-12-13,Asthma
+1373,359,2025-07-21,Fatigue
+1374,712,2025-04-08,Diabetes Follow-up
+1375,536,2025-04-07,Shortness of Breath
+1376,131,2025-04-30,Routine Checkup
+1377,816,2024-03-23,Chest Pain
+1378,120,2024-01-11,Hypertension
+1379,304,2024-10-23,Asthma
+1380,866,2023-08-12,Shortness of Breath
+1381,247,2023-12-29,Chest Pain
+1382,103,2024-03-10,Hypertension
+1383,748,2023-08-26,Routine Checkup
+1384,658,2024-09-02,Diabetes Follow-up
+1385,411,2023-12-29,Routine Checkup
+1386,914,2025-04-06,Routine Checkup
+1387,21,2024-06-16,Fatigue
+1388,644,2024-05-05,Routine Checkup
+1389,400,2024-03-08,Diabetes Follow-up
+1390,598,2024-02-07,Shortness of Breath
+1391,253,2025-02-26,Hypertension
+1392,487,2025-05-01,Chest Pain
+1393,868,2025-04-07,Routine Checkup
+1394,457,2024-11-06,Hypertension
+1395,298,2025-06-30,Routine Checkup
+1396,873,2024-05-10,Routine Checkup
+1397,413,2024-08-12,Routine Checkup
+1398,760,2023-12-03,Asthma
+1399,244,2023-11-28,Shortness of Breath
+1400,917,2024-03-03,Diabetes Follow-up
+1401,365,2024-11-14,Routine Checkup
+1402,200,2025-01-08,Routine Checkup
+1403,444,2025-02-09,Asthma
+1404,384,2023-12-03,Chest Pain
+1405,73,2024-09-21,Routine Checkup
+1406,54,2023-08-24,Shortness of Breath
+1407,661,2025-06-10,Fatigue
+1408,459,2024-06-30,Routine Checkup
+1409,332,2025-01-27,Routine Checkup
+1410,17,2024-06-29,Fatigue
+1411,526,2024-11-15,Asthma
+1412,481,2024-01-13,Shortness of Breath
+1413,724,2023-11-17,Diabetes Follow-up
+1414,869,2025-01-02,Chest Pain
+1415,585,2024-06-18,Diabetes Follow-up
+1416,327,2025-06-28,Routine Checkup
+1417,979,2024-03-24,Shortness of Breath
+1418,317,2024-04-02,Hypertension
+1419,315,2023-07-29,Asthma
+1420,542,2024-07-09,Diabetes Follow-up
+1421,717,2024-11-07,Routine Checkup
+1422,211,2025-04-22,Fatigue
+1423,462,2025-05-17,Asthma
+1424,870,2024-03-25,Diabetes Follow-up
+1425,89,2025-05-10,Diabetes Follow-up
+1426,828,2024-01-04,Routine Checkup
+1427,220,2025-07-03,Fatigue
+1428,488,2023-12-06,Hypertension
+1429,810,2024-01-16,Shortness of Breath
+1430,847,2025-03-22,Asthma
+1431,796,2023-09-10,Asthma
+1432,620,2024-01-12,Chest Pain
+1433,366,2024-12-26,Chest Pain
+1434,820,2025-01-22,Chest Pain
+1435,897,2025-03-27,Hypertension
+1436,539,2023-10-13,Chest Pain
+1437,91,2023-09-03,Fatigue
+1438,593,2024-01-04,Chest Pain
+1439,688,2025-04-21,Diabetes Follow-up
+1440,287,2024-04-25,Fatigue
+1441,847,2023-08-22,Chest Pain
+1442,619,2024-11-09,Hypertension
+1443,805,2024-10-07,Asthma
+1444,955,2024-07-04,Asthma
+1445,595,2025-05-25,Hypertension
+1446,271,2023-11-06,Shortness of Breath
+1447,450,2025-04-12,Fatigue
+1448,677,2024-06-22,Fatigue
+1449,50,2025-01-11,Asthma
+1450,401,2024-02-15,Shortness of Breath
+1451,899,2025-02-06,Asthma
+1452,696,2024-10-22,Fatigue
+1453,376,2024-03-14,Asthma
+1454,875,2025-04-29,Asthma
+1455,188,2024-04-19,Asthma
+1456,508,2024-12-06,Asthma
+1457,975,2024-03-23,Asthma
+1458,161,2024-12-16,Diabetes Follow-up
+1459,311,2025-03-01,Shortness of Breath
+1460,479,2023-08-05,Diabetes Follow-up
+1461,957,2025-06-04,Fatigue
+1462,774,2025-02-08,Fatigue
+1463,512,2023-10-16,Diabetes Follow-up
+1464,42,2025-05-05,Chest Pain
+1465,832,2024-04-03,Chest Pain
+1466,576,2024-01-01,Asthma
+1467,701,2025-01-13,Chest Pain
+1468,899,2024-07-27,Routine Checkup
+1469,529,2024-11-09,Shortness of Breath
+1470,334,2024-08-01,Shortness of Breath
+1471,746,2024-08-08,Routine Checkup
+1472,247,2023-10-10,Asthma
+1473,871,2025-06-15,Asthma
+1474,966,2025-01-15,Fatigue
+1475,516,2023-11-02,Fatigue
+1476,843,2024-08-27,Hypertension
+1477,741,2025-01-13,Asthma
+1478,539,2024-11-20,Shortness of Breath
+1479,210,2025-04-30,Chest Pain
+1480,786,2023-11-13,Diabetes Follow-up
+1481,638,2023-11-15,Fatigue
+1482,241,2025-01-29,Routine Checkup
+1483,972,2025-03-27,Diabetes Follow-up
+1484,56,2024-04-16,Diabetes Follow-up
+1485,532,2023-08-01,Routine Checkup
+1486,686,2023-08-30,Chest Pain
+1487,70,2023-09-22,Routine Checkup
+1488,166,2024-05-01,Fatigue
+1489,526,2025-03-07,Shortness of Breath
+1490,327,2024-05-06,Asthma
+1491,328,2023-12-19,Diabetes Follow-up
+1492,743,2024-11-12,Routine Checkup
+1493,309,2023-10-13,Asthma
+1494,149,2025-02-21,Fatigue
+1495,334,2023-11-19,Hypertension
+1496,620,2024-10-16,Routine Checkup
+1497,361,2023-08-25,Shortness of Breath
+1498,371,2025-02-07,Fatigue
+1499,404,2024-06-06,Chest Pain
+1500,73,2024-11-24,Routine Checkup
+1501,158,2024-02-23,Diabetes Follow-up
+1502,832,2023-10-01,Hypertension
+1503,424,2025-06-08,Shortness of Breath
+1504,883,2025-05-21,Chest Pain
+1505,350,2023-07-29,Diabetes Follow-up
+1506,298,2023-08-19,Routine Checkup
+1507,526,2024-01-15,Diabetes Follow-up
+1508,659,2024-06-12,Chest Pain
+1509,536,2024-12-26,Shortness of Breath
+1510,490,2024-10-10,Fatigue
+1511,729,2023-09-05,Diabetes Follow-up
+1512,105,2024-06-08,Routine Checkup
+1513,623,2024-10-05,Routine Checkup
+1514,531,2023-12-04,Diabetes Follow-up
+1515,95,2023-10-30,Asthma
+1516,457,2025-01-08,Routine Checkup
+1517,524,2023-10-16,Asthma
+1518,561,2025-06-27,Diabetes Follow-up
+1519,629,2023-12-18,Chest Pain
+1520,234,2025-05-29,Hypertension
+1521,301,2024-09-17,Hypertension
+1522,971,2025-01-26,Chest Pain
+1523,539,2025-02-10,Routine Checkup
+1524,603,2024-09-30,Shortness of Breath
+1525,929,2024-03-28,Diabetes Follow-up
+1526,420,2025-03-18,Shortness of Breath
+1527,178,2023-08-02,Shortness of Breath
+1528,452,2024-03-08,Asthma
+1529,275,2024-10-14,Asthma
+1530,325,2023-10-26,Chest Pain
+1531,174,2024-12-16,Asthma
+1532,130,2024-06-11,Fatigue
+1533,511,2025-01-28,Hypertension
+1534,228,2024-05-08,Shortness of Breath
+1535,804,2024-03-21,Fatigue
+1536,265,2023-12-04,Diabetes Follow-up
+1537,819,2023-11-28,Asthma
+1538,583,2023-10-23,Asthma
+1539,7,2023-09-22,Shortness of Breath
+1540,845,2024-11-03,Routine Checkup
+1541,403,2023-07-30,Diabetes Follow-up
+1542,671,2025-06-11,Routine Checkup
+1543,388,2024-01-22,Shortness of Breath
+1544,15,2024-11-18,Fatigue
+1545,380,2024-01-19,Hypertension
+1546,515,2023-11-24,Routine Checkup
+1547,274,2025-02-13,Hypertension
+1548,147,2024-03-24,Chest Pain
+1549,44,2024-08-16,Asthma
+1550,55,2023-08-04,Hypertension
+1551,785,2025-02-25,Chest Pain
+1552,759,2024-07-04,Asthma
+1553,272,2025-07-14,Routine Checkup
+1554,777,2024-11-26,Chest Pain
+1555,601,2025-01-24,Diabetes Follow-up
+1556,216,2024-07-11,Chest Pain
+1557,374,2023-12-06,Chest Pain
+1558,452,2023-11-15,Chest Pain
+1559,802,2024-05-24,Diabetes Follow-up
+1560,946,2023-12-15,Fatigue
+1561,435,2023-07-25,Routine Checkup
+1562,436,2023-11-10,Asthma
+1563,246,2025-07-09,Fatigue
+1564,289,2024-07-17,Shortness of Breath
+1565,480,2024-12-24,Diabetes Follow-up
+1566,579,2024-10-22,Shortness of Breath
+1567,675,2025-05-30,Asthma
+1568,411,2024-03-05,Routine Checkup
+1569,146,2025-06-07,Fatigue
+1570,785,2024-10-30,Hypertension
+1571,197,2025-03-14,Shortness of Breath
+1572,412,2024-10-01,Chest Pain
+1573,445,2024-08-14,Chest Pain
+1574,969,2024-01-31,Fatigue
+1575,852,2023-11-02,Asthma
+1576,43,2025-07-03,Hypertension
+1577,577,2024-12-17,Hypertension
+1578,677,2025-02-18,Hypertension
+1579,206,2024-12-06,Chest Pain
+1580,862,2025-03-21,Asthma
+1581,250,2024-01-09,Diabetes Follow-up
+1582,224,2023-08-20,Shortness of Breath
+1583,821,2025-07-02,Chest Pain
+1584,633,2024-11-19,Chest Pain
+1585,831,2023-11-12,Diabetes Follow-up
+1586,138,2025-01-27,Routine Checkup
+1587,758,2024-04-12,Diabetes Follow-up
+1588,42,2025-05-21,Routine Checkup
+1589,558,2024-03-21,Routine Checkup
+1590,950,2024-05-06,Diabetes Follow-up
+1591,821,2024-06-10,Hypertension
+1592,118,2024-02-11,Asthma
+1593,516,2025-05-10,Chest Pain
+1594,689,2025-05-26,Routine Checkup
+1595,105,2024-06-16,Fatigue
+1596,172,2024-05-26,Chest Pain
+1597,144,2023-11-08,Hypertension
+1598,238,2024-09-08,Fatigue
+1599,669,2024-01-02,Chest Pain
+1600,307,2024-04-19,Shortness of Breath
+1601,943,2024-09-29,Fatigue
+1602,212,2025-07-15,Hypertension
+1603,93,2024-12-17,Diabetes Follow-up
+1604,188,2023-11-24,Fatigue
+1605,367,2023-08-25,Chest Pain
+1606,793,2024-06-21,Hypertension
+1607,552,2025-07-04,Hypertension
+1608,325,2023-10-30,Fatigue
+1609,858,2024-02-01,Routine Checkup
+1610,1000,2025-06-13,Diabetes Follow-up
+1611,138,2023-08-19,Diabetes Follow-up
+1612,445,2025-06-10,Diabetes Follow-up
+1613,76,2024-09-24,Diabetes Follow-up
+1614,8,2024-07-17,Fatigue
+1615,108,2025-06-11,Hypertension
+1616,988,2024-05-11,Fatigue
+1617,740,2025-02-12,Diabetes Follow-up
+1618,974,2025-06-13,Fatigue
+1619,505,2025-06-06,Routine Checkup
+1620,973,2023-12-12,Diabetes Follow-up
+1621,313,2024-01-13,Shortness of Breath
+1622,814,2024-03-06,Routine Checkup
+1623,653,2024-01-26,Hypertension
+1624,174,2023-12-10,Fatigue
+1625,349,2025-03-08,Routine Checkup
+1626,191,2024-05-08,Chest Pain
+1627,631,2023-11-29,Hypertension
+1628,30,2025-06-13,Hypertension
+1629,986,2024-09-10,Chest Pain
+1630,216,2025-03-18,Shortness of Breath
+1631,130,2025-03-25,Fatigue
+1632,84,2025-07-15,Shortness of Breath
+1633,423,2023-10-09,Routine Checkup
+1634,990,2024-12-02,Diabetes Follow-up
+1635,109,2023-11-21,Routine Checkup
+1636,93,2024-05-16,Hypertension
+1637,143,2024-02-05,Asthma
+1638,677,2024-03-13,Diabetes Follow-up
+1639,751,2024-03-09,Diabetes Follow-up
+1640,107,2023-11-06,Routine Checkup
+1641,829,2023-12-31,Routine Checkup
+1642,518,2025-05-01,Asthma
+1643,530,2025-02-12,Hypertension
+1644,422,2023-08-21,Routine Checkup
+1645,845,2024-05-17,Chest Pain
+1646,109,2024-04-24,Asthma
+1647,385,2025-06-05,Diabetes Follow-up
+1648,894,2023-08-22,Asthma
+1649,416,2025-03-02,Diabetes Follow-up
+1650,316,2024-09-01,Diabetes Follow-up
+1651,840,2024-06-18,Shortness of Breath
+1652,351,2024-07-05,Hypertension
+1653,611,2025-05-24,Asthma
+1654,923,2024-08-26,Shortness of Breath
+1655,411,2024-06-03,Diabetes Follow-up
+1656,684,2025-06-26,Chest Pain
+1657,284,2025-04-06,Shortness of Breath
+1658,965,2025-02-01,Asthma
+1659,436,2025-06-09,Hypertension
+1660,441,2025-04-10,Hypertension
+1661,979,2023-11-02,Hypertension
+1662,345,2024-06-05,Diabetes Follow-up
+1663,786,2024-02-13,Chest Pain
+1664,965,2024-01-26,Diabetes Follow-up
+1665,316,2024-01-04,Fatigue
+1666,201,2024-10-04,Chest Pain
+1667,152,2024-08-10,Diabetes Follow-up
+1668,903,2023-09-04,Shortness of Breath
+1669,55,2023-12-29,Fatigue
+1670,534,2023-10-17,Routine Checkup
+1671,300,2024-11-03,Fatigue
+1672,424,2023-12-15,Diabetes Follow-up
+1673,741,2024-04-26,Shortness of Breath
+1674,555,2023-12-27,Shortness of Breath
+1675,157,2025-04-08,Diabetes Follow-up
+1676,494,2024-12-14,Hypertension
+1677,987,2025-06-09,Routine Checkup
+1678,545,2023-12-17,Routine Checkup
+1679,171,2024-07-20,Asthma
+1680,161,2024-03-29,Shortness of Breath
+1681,908,2024-09-09,Routine Checkup
+1682,650,2025-01-08,Routine Checkup
+1683,523,2024-03-20,Asthma
+1684,189,2023-10-05,Asthma
+1685,802,2023-08-09,Routine Checkup
+1686,997,2024-06-30,Hypertension
+1687,947,2024-06-30,Chest Pain
+1688,219,2023-08-06,Shortness of Breath
+1689,91,2024-10-09,Fatigue
+1690,216,2024-05-19,Asthma
+1691,12,2023-08-06,Routine Checkup
+1692,616,2023-09-09,Fatigue
+1693,555,2023-10-18,Asthma
+1694,807,2025-07-13,Hypertension
+1695,252,2023-10-30,Diabetes Follow-up
+1696,129,2024-08-15,Diabetes Follow-up
+1697,653,2025-04-23,Hypertension
+1698,16,2024-04-17,Asthma
+1699,545,2024-09-29,Fatigue
+1700,959,2024-05-14,Shortness of Breath
+1701,947,2024-11-10,Asthma
+1702,953,2025-04-23,Routine Checkup
+1703,446,2024-07-18,Routine Checkup
+1704,459,2024-01-03,Asthma
+1705,540,2025-02-12,Fatigue
+1706,516,2024-07-26,Chest Pain
+1707,810,2025-01-01,Shortness of Breath
+1708,583,2024-03-10,Diabetes Follow-up
+1709,123,2024-07-14,Chest Pain
+1710,798,2024-09-19,Hypertension
+1711,671,2025-05-21,Chest Pain
+1712,593,2024-02-10,Hypertension
+1713,181,2025-03-16,Hypertension
+1714,258,2024-05-03,Hypertension
+1715,212,2023-11-06,Shortness of Breath
+1716,720,2023-09-04,Diabetes Follow-up
+1717,754,2024-04-05,Routine Checkup
+1718,78,2025-03-21,Chest Pain
+1719,24,2024-05-07,Chest Pain
+1720,864,2025-06-07,Diabetes Follow-up
+1721,926,2023-10-05,Asthma
+1722,440,2024-07-13,Asthma
+1723,661,2023-12-08,Diabetes Follow-up
+1724,337,2024-09-27,Diabetes Follow-up
+1725,105,2025-07-18,Diabetes Follow-up
+1726,10,2024-12-11,Routine Checkup
+1727,114,2024-07-06,Fatigue
+1728,438,2024-06-25,Hypertension
+1729,89,2024-08-19,Hypertension
+1730,576,2025-01-27,Hypertension
+1731,934,2024-06-01,Asthma
+1732,560,2025-07-05,Asthma
+1733,791,2024-03-31,Asthma
+1734,898,2024-11-24,Shortness of Breath
+1735,27,2024-12-29,Shortness of Breath
+1736,962,2025-01-03,Routine Checkup
+1737,332,2024-12-23,Hypertension
+1738,96,2023-10-26,Shortness of Breath
+1739,177,2024-11-25,Fatigue
+1740,348,2023-09-08,Routine Checkup
+1741,339,2025-02-14,Diabetes Follow-up
+1742,597,2023-10-15,Hypertension
+1743,719,2025-07-16,Asthma
+1744,958,2025-05-28,Fatigue
+1745,132,2023-10-15,Diabetes Follow-up
+1746,720,2023-08-20,Diabetes Follow-up
+1747,304,2024-07-28,Asthma
+1748,790,2024-10-19,Chest Pain
+1749,336,2024-03-29,Hypertension
+1750,409,2023-08-27,Routine Checkup
+1751,239,2024-09-03,Routine Checkup
+1752,166,2025-07-05,Diabetes Follow-up
+1753,682,2024-03-31,Fatigue
+1754,784,2023-12-11,Chest Pain
+1755,418,2024-01-04,Hypertension
+1756,624,2023-11-17,Chest Pain
+1757,502,2024-05-24,Hypertension
+1758,73,2024-02-26,Hypertension
+1759,461,2023-09-04,Fatigue
+1760,858,2023-08-21,Shortness of Breath
+1761,807,2025-03-02,Shortness of Breath
+1762,707,2023-10-23,Shortness of Breath
+1763,570,2025-03-18,Chest Pain
+1764,358,2024-12-08,Shortness of Breath
+1765,169,2023-11-02,Fatigue
+1766,424,2024-11-30,Shortness of Breath
+1767,879,2024-03-09,Shortness of Breath
+1768,565,2024-03-28,Asthma
+1769,314,2025-07-17,Chest Pain
+1770,297,2024-01-03,Diabetes Follow-up
+1771,15,2025-07-03,Shortness of Breath
+1772,65,2023-09-17,Fatigue
+1773,367,2023-11-05,Hypertension
+1774,486,2024-04-11,Fatigue
+1775,825,2024-03-21,Shortness of Breath
+1776,80,2024-05-26,Hypertension
+1777,245,2023-08-19,Hypertension
+1778,951,2025-02-16,Routine Checkup
+1779,49,2025-05-22,Shortness of Breath
+1780,744,2024-08-21,Hypertension
+1781,689,2025-05-29,Chest Pain
+1782,676,2025-05-23,Shortness of Breath
+1783,54,2024-07-14,Diabetes Follow-up
+1784,189,2024-07-12,Diabetes Follow-up
+1785,828,2023-08-17,Fatigue
+1786,446,2023-11-09,Chest Pain
+1787,751,2024-06-16,Shortness of Breath
+1788,429,2024-09-14,Shortness of Breath
+1789,369,2025-06-26,Chest Pain
+1790,601,2024-05-23,Routine Checkup
+1791,85,2025-06-29,Shortness of Breath
+1792,36,2025-04-16,Shortness of Breath
+1793,268,2023-08-03,Hypertension
+1794,720,2024-06-19,Asthma
+1795,165,2023-08-12,Diabetes Follow-up
+1796,1000,2024-05-06,Hypertension
+1797,8,2024-11-12,Fatigue
+1798,848,2023-09-09,Diabetes Follow-up
+1799,892,2024-05-06,Hypertension
+1800,279,2024-03-21,Fatigue
+1801,475,2024-08-19,Chest Pain
+1802,476,2024-02-02,Asthma
+1803,534,2024-10-04,Hypertension
+1804,79,2025-04-14,Routine Checkup
+1805,487,2025-07-02,Shortness of Breath
+1806,764,2023-10-28,Shortness of Breath
+1807,646,2024-01-17,Asthma
+1808,820,2024-06-01,Routine Checkup
+1809,478,2024-06-29,Asthma
+1810,733,2024-06-07,Chest Pain
+1811,123,2024-12-12,Routine Checkup
+1812,219,2023-10-21,Chest Pain
+1813,840,2024-01-06,Asthma
+1814,56,2024-05-16,Diabetes Follow-up
+1815,463,2025-07-11,Shortness of Breath
+1816,719,2025-04-08,Diabetes Follow-up
+1817,853,2025-07-05,Shortness of Breath
+1818,452,2025-02-15,Chest Pain
+1819,297,2023-10-31,Asthma
+1820,894,2024-01-11,Hypertension
+1821,266,2024-01-03,Shortness of Breath
+1822,231,2025-06-18,Diabetes Follow-up
+1823,117,2024-06-04,Shortness of Breath
+1824,359,2024-12-19,Asthma
+1825,712,2023-09-19,Shortness of Breath
+1826,405,2025-07-06,Chest Pain
+1827,790,2024-07-14,Routine Checkup
+1828,708,2023-10-25,Hypertension
+1829,132,2024-02-18,Fatigue
+1830,358,2024-11-22,Asthma
+1831,290,2024-07-25,Asthma
+1832,847,2025-07-18,Hypertension
+1833,1000,2023-11-24,Fatigue
+1834,212,2024-02-12,Hypertension
+1835,282,2023-08-18,Routine Checkup
+1836,537,2025-07-06,Shortness of Breath
+1837,808,2024-06-29,Routine Checkup
+1838,518,2024-04-27,Diabetes Follow-up
+1839,554,2024-11-03,Shortness of Breath
+1840,52,2025-05-30,Asthma
+1841,91,2024-05-09,Hypertension
+1842,746,2023-10-31,Diabetes Follow-up
+1843,755,2025-02-14,Asthma
+1844,920,2023-09-24,Fatigue
+1845,808,2023-08-03,Asthma
+1846,463,2024-02-03,Hypertension
+1847,445,2024-01-01,Chest Pain
+1848,647,2024-08-01,Asthma
+1849,705,2024-08-09,Shortness of Breath
+1850,417,2025-03-12,Fatigue
+1851,873,2023-09-06,Diabetes Follow-up
+1852,467,2025-04-12,Chest Pain
+1853,729,2024-12-14,Diabetes Follow-up
+1854,957,2024-05-22,Hypertension
+1855,188,2024-01-29,Asthma
+1856,892,2025-04-24,Chest Pain
+1857,118,2024-10-06,Routine Checkup
+1858,893,2024-10-17,Hypertension
+1859,707,2023-11-18,Chest Pain
+1860,204,2024-09-08,Asthma
+1861,418,2023-08-11,Hypertension
+1862,348,2024-06-21,Diabetes Follow-up
+1863,867,2024-09-02,Routine Checkup
+1864,240,2024-08-01,Asthma
+1865,725,2023-10-24,Fatigue
+1866,352,2024-05-01,Fatigue
+1867,595,2024-05-17,Diabetes Follow-up
+1868,823,2024-11-24,Shortness of Breath
+1869,829,2024-10-05,Hypertension
+1870,90,2023-08-13,Fatigue
+1871,955,2024-08-28,Hypertension
+1872,140,2025-07-01,Asthma
+1873,484,2023-12-19,Fatigue
+1874,858,2024-05-14,Shortness of Breath
+1875,474,2025-05-06,Shortness of Breath
+1876,665,2024-08-13,Hypertension
+1877,798,2024-08-19,Shortness of Breath
+1878,488,2024-12-13,Routine Checkup
+1879,417,2024-12-14,Diabetes Follow-up
+1880,633,2025-05-08,Routine Checkup
+1881,376,2025-01-04,Diabetes Follow-up
+1882,444,2024-03-20,Asthma
+1883,963,2023-07-27,Chest Pain
+1884,74,2024-09-08,Shortness of Breath
+1885,194,2024-09-01,Asthma
+1886,976,2023-08-22,Routine Checkup
+1887,107,2023-12-24,Asthma
+1888,282,2025-01-12,Diabetes Follow-up
+1889,97,2024-11-14,Routine Checkup
+1890,450,2023-09-19,Hypertension
+1891,298,2025-02-16,Hypertension
+1892,772,2023-11-20,Asthma
+1893,497,2025-03-26,Asthma
+1894,585,2024-10-25,Hypertension
+1895,983,2024-08-13,Hypertension
+1896,789,2025-02-09,Asthma
+1897,491,2024-03-12,Fatigue
+1898,923,2024-01-19,Asthma
+1899,901,2024-02-14,Fatigue
+1900,350,2024-11-21,Fatigue
+1901,927,2025-03-07,Shortness of Breath
+1902,51,2025-04-04,Diabetes Follow-up
+1903,840,2025-05-22,Shortness of Breath
+1904,642,2024-10-16,Shortness of Breath
+1905,229,2025-01-16,Chest Pain
+1906,494,2023-07-31,Asthma
+1907,930,2024-03-04,Chest Pain
+1908,197,2023-12-30,Routine Checkup
+1909,885,2024-09-05,Asthma
+1910,558,2023-10-29,Diabetes Follow-up
+1911,771,2024-11-27,Shortness of Breath
+1912,274,2023-10-11,Routine Checkup
+1913,140,2025-02-16,Chest Pain
+1914,682,2024-11-22,Hypertension
+1915,451,2023-10-27,Chest Pain
+1916,286,2024-07-07,Hypertension
+1917,272,2025-04-24,Diabetes Follow-up
+1918,443,2025-04-07,Routine Checkup
+1919,103,2023-12-19,Hypertension
+1920,112,2024-11-22,Chest Pain
+1921,346,2024-10-02,Diabetes Follow-up
+1922,148,2023-09-20,Asthma
+1923,837,2023-12-28,Fatigue
+1924,20,2024-11-10,Fatigue
+1925,975,2023-09-23,Diabetes Follow-up
+1926,643,2024-02-01,Diabetes Follow-up
+1927,603,2024-11-16,Shortness of Breath
+1928,120,2024-06-12,Asthma
+1929,869,2025-05-22,Asthma
+1930,112,2023-11-11,Asthma
+1931,560,2023-10-18,Hypertension
+1932,264,2024-05-26,Asthma
+1933,400,2025-06-04,Diabetes Follow-up
+1934,420,2025-04-04,Asthma
+1935,324,2025-05-20,Fatigue
+1936,419,2025-05-17,Diabetes Follow-up
+1937,791,2023-08-13,Diabetes Follow-up
+1938,927,2025-05-04,Hypertension
+1939,117,2024-06-24,Routine Checkup
+1940,449,2024-07-28,Hypertension
+1941,253,2024-08-17,Diabetes Follow-up
+1942,172,2025-05-16,Shortness of Breath
+1943,135,2023-10-19,Hypertension
+1944,511,2025-04-16,Chest Pain
+1945,358,2023-10-18,Diabetes Follow-up
+1946,79,2024-04-14,Hypertension
+1947,127,2024-03-04,Asthma
+1948,220,2025-05-16,Chest Pain
+1949,627,2023-12-27,Chest Pain
+1950,313,2025-06-06,Chest Pain
+1951,116,2023-08-07,Hypertension
+1952,593,2024-09-02,Fatigue
+1953,929,2024-10-28,Routine Checkup
+1954,213,2024-02-24,Hypertension
+1955,755,2025-07-07,Routine Checkup
+1956,907,2025-05-25,Asthma
+1957,528,2024-02-04,Chest Pain
+1958,93,2025-02-21,Routine Checkup
+1959,84,2023-10-30,Chest Pain
+1960,629,2024-01-21,Asthma
+1961,14,2024-05-02,Hypertension
+1962,633,2023-09-07,Hypertension
+1963,723,2025-07-05,Asthma
+1964,130,2025-01-04,Chest Pain
+1965,622,2025-05-13,Diabetes Follow-up
+1966,800,2024-12-30,Asthma
+1967,109,2024-06-22,Asthma
+1968,48,2024-01-22,Shortness of Breath
+1969,765,2025-06-21,Fatigue
+1970,608,2024-08-29,Fatigue
+1971,972,2023-08-27,Hypertension
+1972,509,2024-07-19,Asthma
+1973,808,2024-12-21,Chest Pain
+1974,848,2024-02-25,Shortness of Breath
+1975,25,2023-08-15,Asthma
+1976,393,2025-05-24,Diabetes Follow-up
+1977,457,2024-05-11,Shortness of Breath
+1978,687,2023-12-20,Diabetes Follow-up
+1979,397,2024-07-05,Diabetes Follow-up
+1980,636,2023-11-10,Fatigue
+1981,620,2024-10-06,Routine Checkup
+1982,276,2024-05-19,Diabetes Follow-up
+1983,288,2025-07-06,Diabetes Follow-up
+1984,556,2024-09-09,Hypertension
+1985,559,2023-10-26,Diabetes Follow-up
+1986,791,2024-11-10,Asthma
+1987,533,2024-08-20,Asthma
+1988,261,2024-10-22,Asthma
+1989,151,2024-02-22,Shortness of Breath
+1990,662,2025-02-26,Hypertension
+1991,327,2025-04-25,Chest Pain
+1992,516,2024-02-07,Fatigue
+1993,237,2023-08-27,Diabetes Follow-up
+1994,925,2025-05-11,Fatigue
+1995,4,2023-11-23,Shortness of Breath
+1996,42,2025-02-04,Chest Pain
+1997,46,2025-01-31,Asthma
+1998,450,2024-10-13,Asthma
+1999,888,2023-11-29,Chest Pain
+2000,613,2025-06-16,Diabetes Follow-up
