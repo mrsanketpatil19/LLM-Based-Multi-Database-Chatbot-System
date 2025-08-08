@@ -65,8 +65,11 @@ Thumbs.db
 *.tmp
 *.temp
 
-# FAISS index files (if they're large)
-# faiss_index_notice_privacy/
+# FAISS index files (large files)
+faiss_index_notice_privacy/
 
-# PDF files (if they're large)
-# pdf/
+# PDF files (large files)
+pdf/
+
+# Database files
+healthcare.db

@@ -46,6 +46,13 @@ agent = None  # router agent
 # ------------------------------------------------------------------------------------
 @app.on_event("startup")
 def build_agent_on_startup():
+    # Run setup script for Railway deployment
+    try:
+        import setup_railway
+        setup_railway.main()
+    except Exception as e:
+        print(f"Setup script error (non-critical): {e}")
+    
     global agent
     
     # Check if OpenAI API key is set
