@@ -77,9 +77,9 @@ def build_agent_on_startup():
         llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
 
         # 2) PDF Tool (RAG over FAISS)
-        # Use local model for offline operation
+        # Use remote model for deployment (faster startup)
         embedding = HuggingFaceEmbeddings(
-            model_name=str(MODEL_PATH),
+            model_name="sentence-transformers/all-MiniLM-L6-v2",
             model_kwargs={'device': 'cpu'}
         )
         vectorstore = FAISS.load_local(
@@ -248,10 +248,13 @@ Return the chosen tool's raw output only. It already includes:
         )
 
         agent = agent_local  # set global
+        print("✅ Agent initialized successfully!")
         
     except Exception as e:
         print(f"ERROR: Failed to initialize agent: {e}")
         print("Please check your OpenAI API key and ensure all dependencies are installed.")
+        import traceback
+        traceback.print_exc()
         agent = None
 
 
