@@ -152,10 +152,10 @@ def build_agent_on_startup():
             db=db,
             agent_type=AgentType.OPENAI_FUNCTIONS,
             verbose=False,
-            max_iterations=10,  # Increase from default 5
-            max_execution_time=60,  # 60 seconds timeout
+            max_iterations=5,  # Reduced for faster response
+            max_execution_time=30,  # 30 seconds timeout (reduced)
             prefix="""
-You are a helpful medical data assistant.
+You are a helpful medical data assistant. Be concise and fast.
 
 Database schema:
 - patients(patient_id PK, name, age, gender)
@@ -168,6 +168,7 @@ Rules:
 - For patient 'summary', join patients -> visits -> prescriptions -> medications and order by date.
 - Prefer DISTINCT to avoid duplicates where it makes sense.
 - Return concise, faithful results. Do not invent data.
+- Keep responses brief and to the point.
 
 When summarizing, output a short clinical-style paragraph (no bullets).
 """
@@ -190,9 +191,11 @@ Do NOT expect the input to be SQL. If the input looks like SQL anyway, execute i
                         f"SQL: {q}\n"
                         f"Answer: {rows}"
                     )
-                # clear previous captured SQLs for a clean grab
+                
+                # Use invoke instead of run for better performance
                 sql_queries.clear()
-                answer = sql_agent.run(SQL_PREFIX_FORCED + "\n\nUser question:\n" + q)
+                result = sql_agent.invoke({"input": SQL_PREFIX_FORCED + "\n\nUser question:\n" + q})
+                answer = result.get("output", "No answer generated")
                 generated_sql = sql_queries[-1] if sql_queries else "N/A"
                 return (
                     "Source: Database (SQLite: healthcare.db)\n"
@@ -243,8 +246,8 @@ Return the chosen tool's raw output only. It already includes:
             llm=router_llm,
             agent=AgentType.OPENAI_FUNCTIONS,
             verbose=True,
-            max_iterations=10,  # Increase from default 5
-            max_execution_time=120,  # 2 minutes timeout
+            max_iterations=3,  # Reduced for faster response
+            max_execution_time=60,  # 1 minute timeout (reduced)
             agent_kwargs={
                 "extra_prompt_messages": [
                     SystemMessagePromptTemplate.from_template(ROUTER_SYSTEM_PROMPT)
