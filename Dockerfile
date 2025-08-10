@@ -42,7 +42,6 @@ COPY --from=builder /root/.local /root/.local
 
 # Copy application files
 COPY main.py .
-COPY setup_railway.py .
 COPY static/ ./static/
 COPY templates/ ./templates/
 COPY data/ ./data/
