@@ -65,11 +65,12 @@ Thumbs.db
 *.tmp
 *.temp
 
-# FAISS index files (large files)
-faiss_index_notice_privacy/
+# FAISS index files (large files) - but allow the vendored one
+# faiss_index_notice_privacy/
 
-# PDF files (large files)
-pdf/
+# Database files - but allow the vendored one
+# healthcare.db
 
-# Database files
-healthcare.db
+# Allow vendored models and data for offline operation
+!models/
+!data/

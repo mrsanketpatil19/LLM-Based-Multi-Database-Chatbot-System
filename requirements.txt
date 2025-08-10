@@ -12,9 +12,17 @@ langchain-community==0.0.36
 langchain-core==0.1.53
 langchain-text-splitters==0.0.2
 
+# Database
+sqlite3
+
 # Vector embeddings and search
 faiss-cpu==1.11.0
 sentence-transformers==3.0.0
+torch==2.0.1+cpu
+torchvision==0.15.2+cpu
+torchaudio==2.0.2+cpu
+transformers==4.35.0
+huggingface-hub==0.19.4
 
 # PDF processing
 PyMuPDF==1.25.1

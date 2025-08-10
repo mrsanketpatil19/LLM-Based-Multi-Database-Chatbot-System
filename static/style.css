@@ -939,6 +939,33 @@ body {
     gap: 0.5rem;
 }
 
+/* Data Source Icon Colors */
+.data-source h4 i.fas.fa-database {
+    color: #007bff !important; /* Blue color for database icon */
+}
+
+.data-source h4 i.fas.fa-file-pdf {
+    color: #dc3545 !important; /* Red color for PDF icon */
+}
+
+/* Alternative selectors for better compatibility */
+.data-sources .data-source h4 .fa-database {
+    color: #007bff !important;
+}
+
+.data-sources .data-source h4 .fa-file-pdf {
+    color: #dc3545 !important;
+}
+
+/* Direct icon targeting */
+.fa-database {
+    color: #007bff !important;
+}
+
+.fa-file-pdf {
+    color: #dc3545 !important;
+}
+
 .data-source p {
     color: #666;
     margin-bottom: 1rem;

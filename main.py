@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import JSONResponse
@@ -26,8 +27,13 @@ from langchain.agents.agent_toolkits import create_sql_agent
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-DB_PATH = "/Users/sanket/Documents/Python Projects/New Project LLM MultiDB/healthcare.db"
-FAISS_PATH = "faiss_index_notice_privacy"  # folder containing index.faiss + index.pkl
+# Get the directory where main.py is located
+BASE_DIR = Path(__file__).parent.absolute()
+
+# Use absolute paths for data files
+DB_PATH = BASE_DIR / "data" / "healthcare.db"
+FAISS_PATH = BASE_DIR / "data" / "faiss_index_notice_privacy"  # folder containing index.faiss + index.pkl
+MODEL_PATH = BASE_DIR / "models" / "all-MiniLM-L6-v2"  # local model directory
 
 # ------------------------------------------------------------------------------------
 # App init
@@ -66,7 +72,11 @@ def build_agent_on_startup():
         llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
 
         # 2) PDF Tool (RAG over FAISS)
-        embedding = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+        # Use local model for offline operation
+        embedding = HuggingFaceEmbeddings(
+            model_name=str(MODEL_PATH),
+            model_kwargs={'device': 'cpu'}
+        )
         vectorstore = FAISS.load_local(
             FAISS_PATH,
             embeddings=embedding,

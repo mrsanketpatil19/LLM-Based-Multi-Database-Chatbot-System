@@ -13,18 +13,26 @@ from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 import fitz  # PyMuPDF
 
+# Get the directory where setup_railway.py is located
+BASE_DIR = Path(__file__).parent.absolute()
+
 def create_database():
     """Create SQLite database from CSV files."""
     print("Creating database from CSV files...")
     
+    # Create data directory if it doesn't exist
+    data_dir = BASE_DIR / "data"
+    data_dir.mkdir(exist_ok=True)
+    
     # Create database
-    conn = sqlite3.connect('healthcare.db')
+    db_path = data_dir / "healthcare.db"
+    conn = sqlite3.connect(db_path)
     
     # Read CSV files
-    patients_df = pd.read_csv('csv/patients.csv')
-    visits_df = pd.read_csv('csv/visits.csv')
-    prescriptions_df = pd.read_csv('csv/prescriptions.csv')
-    medications_df = pd.read_csv('csv/medications.csv')
+    patients_df = pd.read_csv(BASE_DIR / 'csv/patients.csv')
+    visits_df = pd.read_csv(BASE_DIR / 'csv/visits.csv')
+    prescriptions_df = pd.read_csv(BASE_DIR / 'csv/prescriptions.csv')
+    medications_df = pd.read_csv(BASE_DIR / 'csv/medications.csv')
     
     # Write to database
     patients_df.to_sql('patients', conn, if_exists='replace', index=False)
@@ -39,12 +47,16 @@ def create_faiss_index():
     """Create FAISS index from PDF files."""
     print("Creating FAISS index from PDF files...")
     
-    # Create FAISS directory
-    faiss_dir = Path("faiss_index_notice_privacy")
-    faiss_dir.mkdir(exist_ok=True)
+    # Create FAISS directory in data folder
+    faiss_dir = BASE_DIR / "data" / "faiss_index_notice_privacy"
+    faiss_dir.mkdir(parents=True, exist_ok=True)
     
-    # Initialize embeddings
-    embedding = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+    # Initialize embeddings using local model
+    model_path = BASE_DIR / "models" / "all-MiniLM-L6-v2"
+    embedding = HuggingFaceEmbeddings(
+        model_name=str(model_path),
+        model_kwargs={'device': 'cpu'}
+    )
     
     # Text splitter
     text_splitter = RecursiveCharacterTextSplitter(
@@ -54,7 +66,7 @@ def create_faiss_index():
     )
     
     # Process PDF files
-    pdf_dir = Path("pdf")
+    pdf_dir = BASE_DIR / "pdf"
     all_texts = []
     all_metadatas = []
     
@@ -96,7 +108,7 @@ def create_faiss_index():
         )
         
         # Save index
-        vectorstore.save_local("faiss_index_notice_privacy")
+        vectorstore.save_local(str(faiss_dir))
         print("✅ FAISS index created successfully!")
     else:
         print("⚠️ No PDF files found or processed. FAISS index not created.")
