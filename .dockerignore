@@ -1,6 +1,7 @@
 # Git
 .git
 .gitignore
+.gitattributes
 
 # Python
 __pycache__
@@ -48,22 +49,42 @@ langchain_env/
 ehthumbs.db
 Thumbs.db
 
-# Jupyter Notebooks (not needed for production)
-*.ipynb
-.ipynb_checkpoints/
+# Jupyter Notebook
+.ipynb_checkpoints
 
 # Development files
+*.md
+!README.md
+!README_OFFLINE.md
 test.html
-main.py.backup
-templates copy/
+*.backup
+*.tmp
+*.temp
 
-# Documentation
-README.md
+# FAISS index files (large files) - but allow the vendored one
+# faiss_index_notice_privacy/
 
-# Model download script (not needed in container)
+# Database files - but allow the vendored one
+# healthcare.db
+
+# Allow vendored models and data for offline operation
+# !models/
+# !data/
+
+# Development and testing files
+test.html
+*.ipynb
+Converting_pdf_to_embeddings.ipynb
+Database_Chatbot.ipynb
+Final.ipynb
+pdf_Chatbot.ipynb
+
+# Scripts that are not needed in production
 download_model.py
+cleanup_model.py
+deploy.sh
+verify_offline.py
+setup_railway.py
 
-# Environment files
-.env
-.env.local
-.env.*.local
+# Documentation and examples
+templates copy/
