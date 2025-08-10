@@ -45,7 +45,6 @@ COPY main.py .
 COPY static/ ./static/
 COPY templates/ ./templates/
 COPY data/ ./data/
-COPY models/ ./models/
 COPY requirements.txt .
 COPY runtime.txt .
 
