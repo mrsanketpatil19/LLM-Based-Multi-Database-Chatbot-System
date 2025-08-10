@@ -33,7 +33,7 @@ BASE_DIR = Path(__file__).parent.absolute()
 # Use absolute paths for data files
 DB_PATH = BASE_DIR / "data" / "healthcare.db"
 FAISS_PATH = BASE_DIR / "data" / "faiss_index_notice_privacy"  # folder containing index.faiss + index.pkl
-MODEL_PATH = BASE_DIR / "models" / "all-MiniLM-L6-v2"  # local model directory
+# MODEL_PATH = BASE_DIR / "models" / "all-MiniLM-L6-v2"  # Commented out for Railway deployment
 
 # ------------------------------------------------------------------------------------
 # App init
@@ -52,14 +52,28 @@ agent = None  # router agent
 # ------------------------------------------------------------------------------------
 @app.on_event("startup")
 def build_agent_on_startup():
-    # Run setup script for Railway deployment
-    try:
-        import setup_railway
-        setup_railway.main()
-    except Exception as e:
-        print(f"Setup script error (non-critical): {e}")
-    
     global agent
+    
+    print("🚀 Starting Railway setup...")
+    
+    # 1) Database Tool (SQL Agent)
+    print("Creating database from CSV files...")
+    setup_railway()
+    print("✅ Database created successfully!")
+    
+    # 2) PDF Tool (RAG over FAISS)
+    print("Creating FAISS index from PDF files...")
+    # Use remote model for Railway deployment (smaller image size)
+    embedding = HuggingFaceEmbeddings(
+        model_name="sentence-transformers/all-MiniLM-L6-v2",
+        model_kwargs={'device': 'cpu'}
+    )
+    vectorstore = FAISS.load_local(
+        FAISS_PATH,
+        embeddings=embedding,
+        allow_dangerous_deserialization=True,
+    )
+    print("✅ FAISS index created successfully!")
     
     # Check if OpenAI API key is set
     if not OPENAI_API_KEY or OPENAI_API_KEY == "your_openai_api_key_here":
@@ -138,6 +152,8 @@ def build_agent_on_startup():
             db=db,
             agent_type=AgentType.OPENAI_FUNCTIONS,
             verbose=False,
+            max_iterations=10,  # Increase from default 5
+            max_execution_time=60,  # 60 seconds timeout
             prefix="""
 You are a helpful medical data assistant.
 
@@ -227,6 +243,8 @@ Return the chosen tool's raw output only. It already includes:
             llm=router_llm,
             agent=AgentType.OPENAI_FUNCTIONS,
             verbose=True,
+            max_iterations=10,  # Increase from default 5
+            max_execution_time=120,  # 2 minutes timeout
             agent_kwargs={
                 "extra_prompt_messages": [
                     SystemMessagePromptTemplate.from_template(ROUTER_SYSTEM_PROMPT)
