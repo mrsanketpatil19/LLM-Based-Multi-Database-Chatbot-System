@@ -54,26 +54,17 @@ agent = None  # router agent
 def build_agent_on_startup():
     global agent
     
-    print("🚀 Starting Railway setup...")
+    print("🚀 Starting application setup...")
     
-    # 1) Database Tool (SQL Agent)
-    print("Creating database from CSV files...")
-    setup_railway()
-    print("✅ Database created successfully!")
-    
-    # 2) PDF Tool (RAG over FAISS)
-    print("Creating FAISS index from PDF files...")
-    # Use remote model for Railway deployment (smaller image size)
-    embedding = HuggingFaceEmbeddings(
-        model_name="sentence-transformers/all-MiniLM-L6-v2",
-        model_kwargs={'device': 'cpu'}
-    )
-    vectorstore = FAISS.load_local(
-        FAISS_PATH,
-        embeddings=embedding,
-        allow_dangerous_deserialization=True,
-    )
-    print("✅ FAISS index created successfully!")
+    # Data is pre-built, just verify it exists
+    print("Verifying pre-built data...")
+    if not DB_PATH.exists():
+        print(f"❌ Database not found at {DB_PATH}")
+        return
+    if not FAISS_PATH.exists():
+        print(f"❌ FAISS index not found at {FAISS_PATH}")
+        return
+    print("✅ Pre-built data verified!")
     
     # Check if OpenAI API key is set
     if not OPENAI_API_KEY or OPENAI_API_KEY == "your_openai_api_key_here":
