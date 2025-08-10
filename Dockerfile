@@ -26,7 +26,6 @@ FROM python:3.9-slim as runtime
 ENV TRANSFORMERS_OFFLINE=1
 ENV HF_HUB_DISABLE_TELEMETRY=1
 ENV PYTHONUNBUFFERED=1
-ENV PATH=/root/.local/bin:$PATH
 
 # Install only runtime dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -40,6 +39,9 @@ WORKDIR /app
 # Copy Python packages from builder
 COPY --from=builder /root/.local /root/.local
 
+# Install uvicorn globally to avoid permission issues
+RUN pip install --no-cache-dir uvicorn
+
 # Copy application files
 COPY main.py .
 COPY static/ ./static/
@@ -51,14 +53,10 @@ COPY runtime.txt .
 
 # Create app user and set permissions
 RUN useradd --create-home --shell /bin/bash app && \
-    chown -R app:app /app && \
-    chown -R app:app /root/.local
+    chown -R app:app /app
 
 # Switch to app user
 USER app
-
-# Set PATH for app user
-ENV PATH=/root/.local/bin:$PATH
 
 EXPOSE 8000
 
