@@ -7,8 +7,8 @@ ENV PYTHONUNBUFFERED=1
 ENV PIP_NO_CACHE_DIR=1
 ENV PIP_DISABLE_PIP_VERSION_CHECK=1
 
-# Install only essential build dependencies
-RUN apt-get update && apt-get install -y \
+# Install only essential build dependencies in a single layer
+RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get clean
@@ -28,8 +28,8 @@ ENV HF_HUB_DISABLE_TELEMETRY=1
 ENV PYTHONUNBUFFERED=1
 ENV PATH=/root/.local/bin:$PATH
 
-# Install only runtime dependencies
-RUN apt-get update && apt-get install -y \
+# Install only runtime dependencies in a single layer
+RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get clean \
