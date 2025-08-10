@@ -19,7 +19,7 @@ torch==2.0.1
 torchvision==0.15.2
 torchaudio==2.0.2
 transformers==4.35.0
-huggingface-hub==0.19.4
+huggingface-hub>=0.16.4,<0.18
 
 # PDF processing
 PyMuPDF==1.25.1
