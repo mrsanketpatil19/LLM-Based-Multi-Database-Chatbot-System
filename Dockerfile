@@ -18,8 +18,8 @@ WORKDIR /app
 # Copy requirements first for better caching
 COPY requirements.txt .
 
-# Install Python dependencies with optimizations
-RUN pip install --no-cache-dir --user -r requirements.txt
+# Install Python dependencies globally (not --user)
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Stage 2: Runtime stage with minimal footprint
 FROM python:3.9-slim as runtime
@@ -36,11 +36,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 WORKDIR /app
 
-# Copy Python packages from builder
-COPY --from=builder /root/.local /root/.local
-
-# Install uvicorn globally to avoid permission issues
-RUN pip install --no-cache-dir uvicorn
+# Copy Python packages from builder (global installation)
+COPY --from=builder /usr/local/lib/python3.9/site-packages /usr/local/lib/python3.9/site-packages
+COPY --from=builder /usr/local/bin /usr/local/bin
 
 # Copy application files
 COPY main.py .
