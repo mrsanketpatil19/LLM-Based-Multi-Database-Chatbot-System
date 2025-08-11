@@ -1,4 +1,6 @@
 import os
+import sqlite3
+import pandas as pd
 from pathlib import Path
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Request
@@ -36,6 +38,113 @@ FAISS_PATH = BASE_DIR / "data" / "faiss_index_notice_privacy"  # folder containi
 MODEL_PATH = BASE_DIR / "models" / "all-MiniLM-L6-v2"  # Local vendored model
 
 # ------------------------------------------------------------------------------------
+# Database setup functions
+# ------------------------------------------------------------------------------------
+def create_database():
+    """Create the SQLite database from CSV files"""
+    print(f"Creating database at: {DB_PATH}")
+    print(f"Current working directory: {os.getcwd()}")
+    
+    # Ensure data directory exists
+    data_dir = BASE_DIR / "data"
+    data_dir.mkdir(exist_ok=True)
+    
+    # Create database connection
+    conn = sqlite3.connect(DB_PATH)
+    
+    try:
+        # Read CSV files
+        csv_dir = BASE_DIR / "csv"
+        print(f"Reading CSV files from: {csv_dir}")
+        
+        # Check if CSV files exist
+        csv_files = {
+            'patients': csv_dir / 'patients.csv',
+            'visits': csv_dir / 'visits.csv',
+            'prescriptions': csv_dir / 'prescriptions.csv',
+            'medications': csv_dir / 'medications.csv'
+        }
+        
+        for table_name, csv_file in csv_files.items():
+            if csv_file.exists():
+                print(f"Processing {table_name} from {csv_file}")
+                df = pd.read_csv(csv_file)
+                df.to_sql(table_name, conn, if_exists='replace', index=False)
+                print(f"✅ Created table {table_name} with {len(df)} rows")
+            else:
+                print(f"⚠️  CSV file not found: {csv_file}")
+        
+        # Verify tables were created
+        cursor = conn.cursor()
+        cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
+        tables = cursor.fetchall()
+        print(f"✅ Database tables: {[table[0] for table in tables]}")
+        
+        # Check table contents
+        for table_name in ['patients', 'visits', 'prescriptions', 'medications']:
+            cursor.execute(f"SELECT COUNT(*) FROM {table_name}")
+            count = cursor.fetchone()[0]
+            print(f"📊 Table {table_name}: {count} rows")
+        
+        conn.commit()
+        print("✅ Database created successfully!")
+        
+    except Exception as e:
+        print(f"❌ Error creating database: {e}")
+        raise
+    finally:
+        conn.close()
+
+def verify_database():
+    """Verify database exists and has correct schema"""
+    print(f"Verifying database at: {DB_PATH}")
+    
+    if not DB_PATH.exists():
+        print(f"❌ Database file not found: {DB_PATH}")
+        return False
+    
+    file_size = DB_PATH.stat().st_size
+    print(f"📁 Database file size: {file_size} bytes")
+    
+    if file_size == 0:
+        print("❌ Database file is empty")
+        return False
+    
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        cursor = conn.cursor()
+        
+        # Check tables exist
+        cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
+        tables = cursor.fetchall()
+        table_names = [table[0] for table in tables]
+        print(f"📋 Available tables: {table_names}")
+        
+        required_tables = ['patients', 'visits', 'prescriptions', 'medications']
+        missing_tables = [table for table in required_tables if table not in table_names]
+        
+        if missing_tables:
+            print(f"❌ Missing tables: {missing_tables}")
+            return False
+        
+        # Check table contents
+        for table in required_tables:
+            cursor.execute(f"SELECT COUNT(*) FROM {table}")
+            count = cursor.fetchone()[0]
+            print(f"📊 Table {table}: {count} rows")
+            
+            if count == 0:
+                print(f"⚠️  Table {table} is empty")
+        
+        conn.close()
+        print("✅ Database verification successful!")
+        return True
+        
+    except Exception as e:
+        print(f"❌ Database verification failed: {e}")
+        return False
+
+# ------------------------------------------------------------------------------------
 # App init
 # ------------------------------------------------------------------------------------
 app = FastAPI(title="Unified Multi-Source Agent (PDF + SQL)")
@@ -55,6 +164,8 @@ def build_agent_on_startup():
     global agent
     
     print("🚀 Starting application setup...")
+    print(f"📍 Base directory: {BASE_DIR}")
+    print(f"📍 Current working directory: {os.getcwd()}")
     
     # Check if OpenAI API key is set
     if not OPENAI_API_KEY or OPENAI_API_KEY == "your_openai_api_key_here":
@@ -63,6 +174,15 @@ def build_agent_on_startup():
         return
     
     try:
+        # Database setup and verification
+        print("🔍 Checking database...")
+        if not verify_database():
+            print("🔄 Creating database from CSV files...")
+            create_database()
+            if not verify_database():
+                print("❌ Failed to create/verify database")
+                return
+        
         # 1) Shared LLM
         llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
 
@@ -116,6 +236,7 @@ def build_agent_on_startup():
         )
 
         # 3) SQL Tool (Healthcare DB) — robust wrapper
+        print(f"🔗 Connecting to database: {DB_PATH}")
         db = SQLDatabase.from_uri(f"sqlite:///{DB_PATH}")
 
         # ---- capture generated SQL by monkey-patching db.run (minimal, local)
@@ -232,6 +353,7 @@ Return the chosen tool's raw output only. It already includes:
         )
 
         agent = agent_local  # set global
+        print("✅ Agent initialization completed successfully!")
         
     except Exception as e:
         print(f"ERROR: Failed to initialize agent: {e}")
@@ -342,6 +464,120 @@ def chat(req: ChatRequest):
 
 @app.get("/health")
 def health():
+    """Enhanced health check with database information"""
+    health_info = {
+        "status": "healthy",
+        "message": "Application is running",
+        "timestamp": str(pd.Timestamp.now()),
+        "base_dir": str(BASE_DIR),
+        "working_dir": os.getcwd(),
+        "database": {
+            "path": str(DB_PATH),
+            "exists": DB_PATH.exists(),
+            "size_bytes": DB_PATH.stat().st_size if DB_PATH.exists() else 0
+        },
+        "agent_ready": agent is not None
+    }
+    
+    # Add database schema information if database exists
+    if DB_PATH.exists() and DB_PATH.stat().st_size > 0:
+        try:
+            conn = sqlite3.connect(DB_PATH)
+            cursor = conn.cursor()
+            
+            # Get table information
+            cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
+            tables = cursor.fetchall()
+            table_names = [table[0] for table in tables]
+            
+            health_info["database"]["tables"] = table_names
+            
+            # Get row counts for each table
+            table_counts = {}
+            for table in table_names:
+                cursor.execute(f"SELECT COUNT(*) FROM {table}")
+                count = cursor.fetchone()[0]
+                table_counts[table] = count
+            
+            health_info["database"]["table_counts"] = table_counts
+            conn.close()
+            
+        except Exception as e:
+            health_info["database"]["error"] = str(e)
+    
     if agent is None:
-        return {"status": "degraded", "message": "Application is running but agent is not initialized"}
-    return {"status": "healthy", "message": "Application is running"}
+        health_info["status"] = "degraded"
+        health_info["message"] = "Application is running but agent is not initialized"
+    
+    return health_info
+
+@app.get("/debug/database")
+def debug_database():
+    """Debug endpoint to check database status and recreate if needed"""
+    debug_info = {
+        "timestamp": str(pd.Timestamp.now()),
+        "base_dir": str(BASE_DIR),
+        "working_dir": os.getcwd(),
+        "csv_files": {},
+        "database_status": {}
+    }
+    
+    # Check CSV files
+    csv_dir = BASE_DIR / "csv"
+    csv_files = {
+        'patients': csv_dir / 'patients.csv',
+        'visits': csv_dir / 'visits.csv',
+        'prescriptions': csv_dir / 'prescriptions.csv',
+        'medications': csv_dir / 'medications.csv'
+    }
+    
+    for table_name, csv_file in csv_files.items():
+        debug_info["csv_files"][table_name] = {
+            "exists": csv_file.exists(),
+            "size_bytes": csv_file.stat().st_size if csv_file.exists() else 0
+        }
+    
+    # Check database
+    debug_info["database_status"] = {
+        "path": str(DB_PATH),
+        "exists": DB_PATH.exists(),
+        "size_bytes": DB_PATH.stat().st_size if DB_PATH.exists() else 0
+    }
+    
+    if DB_PATH.exists() and DB_PATH.stat().st_size > 0:
+        try:
+            conn = sqlite3.connect(DB_PATH)
+            cursor = conn.cursor()
+            
+            cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
+            tables = cursor.fetchall()
+            table_names = [table[0] for table in tables]
+            
+            debug_info["database_status"]["tables"] = table_names
+            
+            # Check table contents
+            table_counts = {}
+            for table in table_names:
+                cursor.execute(f"SELECT COUNT(*) FROM {table}")
+                count = cursor.fetchone()[0]
+                table_counts[table] = count
+            
+            debug_info["database_status"]["table_counts"] = table_counts
+            conn.close()
+            
+        except Exception as e:
+            debug_info["database_status"]["error"] = str(e)
+    
+    return debug_info
+
+@app.post("/debug/recreate-database")
+def recreate_database():
+    """Force recreate the database from CSV files"""
+    try:
+        create_database()
+        if verify_database():
+            return {"status": "success", "message": "Database recreated successfully"}
+        else:
+            return {"status": "error", "message": "Database recreation failed verification"}
+    except Exception as e:
+        return {"status": "error", "message": f"Failed to recreate database: {str(e)}"}
