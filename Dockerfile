@@ -55,9 +55,9 @@ RUN useradd --create-home --shell /bin/bash app && \
     chown -R app:app /app && \
     chmod +x /app/start.sh
 
-# Install uvicorn for the app user
+# Install all dependencies for the app user
 USER app
-RUN pip install --no-cache-dir --user uvicorn
+RUN pip install --no-cache-dir --user -r requirements.txt
 
 # Switch back to root to set permissions
 USER root
