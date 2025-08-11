@@ -39,9 +39,6 @@ WORKDIR /app
 # Copy Python packages from builder
 COPY --from=builder /root/.local /root/.local
 
-# Install uvicorn globally to avoid permission issues
-RUN pip install --no-cache-dir uvicorn
-
 # Copy application files
 COPY main.py .
 COPY static/ ./static/
@@ -58,8 +55,19 @@ RUN useradd --create-home --shell /bin/bash app && \
     chown -R app:app /app && \
     chmod +x /app/start.sh
 
+# Install uvicorn for the app user
+USER app
+RUN pip install --no-cache-dir --user uvicorn
+
+# Switch back to root to set permissions
+USER root
+RUN chown -R app:app /home/app
+
 # Switch to app user
 USER app
+
+# Set PATH to include Python packages
+ENV PATH="/home/app/.local/bin:/root/.local/bin:$PATH"
 
 EXPOSE 8000
 

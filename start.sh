@@ -46,6 +46,21 @@ else
     exit 1
 fi
 
+# Check if uvicorn is available
+echo "🔍 Checking uvicorn availability..."
+if command -v uvicorn &> /dev/null; then
+    echo "✅ uvicorn found in PATH"
+    UVICORN_CMD="uvicorn"
+elif python -m uvicorn --help &> /dev/null; then
+    echo "✅ uvicorn available via python -m"
+    UVICORN_CMD="python -m uvicorn"
+else
+    echo "❌ uvicorn not found"
+    echo "🔍 Available Python packages:"
+    pip list | grep -i uvicorn || echo "No uvicorn found in pip list"
+    exit 1
+fi
+
 # Start the application
-echo "🚀 Starting uvicorn server..."
-exec uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}
+echo "🚀 Starting uvicorn server with command: $UVICORN_CMD"
+exec $UVICORN_CMD main:app --host 0.0.0.0 --port ${PORT:-8000}
