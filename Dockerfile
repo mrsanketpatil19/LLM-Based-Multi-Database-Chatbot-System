@@ -49,9 +49,6 @@ COPY healthcare.db ./data/healthcare.db
 COPY requirements.txt .
 COPY runtime.txt .
 
-# Debug: List contents to see what was copied
-RUN ls -la /app && echo "=== Data directory contents ===" && ls -la /app/data/ || echo "Data directory not found"
-
 # Create app user and set permissions
 RUN useradd --create-home --shell /bin/bash app && \
     chown -R app:app /app

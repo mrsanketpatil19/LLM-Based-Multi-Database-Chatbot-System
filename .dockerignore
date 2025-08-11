@@ -66,6 +66,7 @@ test.html
 
 # Database files - but allow the vendored one
 # healthcare.db
+!healthcare.db
 
 # Exclude models for Railway deployment (download at runtime)
 models/
