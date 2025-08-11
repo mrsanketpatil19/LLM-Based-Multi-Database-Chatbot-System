@@ -33,7 +33,7 @@ BASE_DIR = Path(__file__).parent.absolute()
 # Use absolute paths for data files
 DB_PATH = BASE_DIR / "data" / "healthcare.db"
 FAISS_PATH = BASE_DIR / "data" / "faiss_index_notice_privacy"  # folder containing index.faiss + index.pkl
-# MODEL_PATH = BASE_DIR / "models" / "all-MiniLM-L6-v2"  # Commented out for Railway deployment
+MODEL_PATH = BASE_DIR / "models" / "all-MiniLM-L6-v2"  # Local vendored model
 
 # ------------------------------------------------------------------------------------
 # App init
@@ -54,30 +54,11 @@ agent = None  # router agent
 def build_agent_on_startup():
     global agent
     
-    print("🚀 Starting Railway setup...")
-    
-    # 1) Database Tool (SQL Agent)
-    print("Creating database from CSV files...")
-    setup_railway()
-    print("✅ Database created successfully!")
-    
-    # 2) PDF Tool (RAG over FAISS)
-    print("Creating FAISS index from PDF files...")
-    # Use remote model for Railway deployment (smaller image size)
-    embedding = HuggingFaceEmbeddings(
-        model_name="sentence-transformers/all-MiniLM-L6-v2",
-        model_kwargs={'device': 'cpu'}
-    )
-    vectorstore = FAISS.load_local(
-        FAISS_PATH,
-        embeddings=embedding,
-        allow_dangerous_deserialization=True,
-    )
-    print("✅ FAISS index created successfully!")
+    print("🚀 Starting application setup...")
     
     # Check if OpenAI API key is set
     if not OPENAI_API_KEY or OPENAI_API_KEY == "your_openai_api_key_here":
-        print("ERROR: OPENAI_API_KEY not set. Please set your OpenAI API key in the .env file.")
+        print("ERROR: OPENAI_API_KEY not set. Please set your OpenAI API key in the environment variables.")
         print("You can get an API key from: https://platform.openai.com/api-keys")
         return
     
@@ -86,6 +67,7 @@ def build_agent_on_startup():
         llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
 
         # 2) PDF Tool (RAG over FAISS)
+        print("Loading FAISS index and embeddings...")
         # Use local model for offline operation
         embedding = HuggingFaceEmbeddings(
             model_name=str(MODEL_PATH),
@@ -360,4 +342,6 @@ def chat(req: ChatRequest):
 
 @app.get("/health")
 def health():
-    return {"status": "ok"}
+    if agent is None:
+        return {"status": "degraded", "message": "Application is running but agent is not initialized"}
+    return {"status": "healthy", "message": "Application is running"}
