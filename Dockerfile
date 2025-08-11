@@ -45,6 +45,7 @@ COPY main.py .
 COPY static/ ./static/
 COPY templates/ ./templates/
 COPY data/ ./data/
+COPY healthcare.db ./data/healthcare.db
 COPY requirements.txt .
 COPY runtime.txt .
 
