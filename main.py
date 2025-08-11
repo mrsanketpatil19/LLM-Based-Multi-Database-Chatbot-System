@@ -166,6 +166,9 @@ def build_agent_on_startup():
     print("🚀 Starting application setup...")
     print(f"📍 Base directory: {BASE_DIR}")
     print(f"📍 Current working directory: {os.getcwd()}")
+    print(f"📍 Environment: TRANSFORMERS_OFFLINE={os.getenv('TRANSFORMERS_OFFLINE', 'not set')}")
+    print(f"📍 Environment: HF_HUB_DISABLE_TELEMETRY={os.getenv('HF_HUB_DISABLE_TELEMETRY', 'not set')}")
+    print(f"📍 Environment: OPENAI_API_KEY={'set' if os.getenv('OPENAI_API_KEY') else 'not set'}")
     
     # Check if OpenAI API key is set
     if not OPENAI_API_KEY or OPENAI_API_KEY == "your_openai_api_key_here":
@@ -184,20 +187,25 @@ def build_agent_on_startup():
                 return
         
         # 1) Shared LLM
+        print("🤖 Initializing OpenAI LLM...")
         llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
 
         # 2) PDF Tool (RAG over FAISS)
-        print("Loading FAISS index and embeddings...")
+        print("📚 Loading FAISS index and embeddings...")
         # Use local model for offline operation
         embedding = HuggingFaceEmbeddings(
             model_name=str(MODEL_PATH),
             model_kwargs={'device': 'cpu'}
         )
+        print(f"✅ Embeddings loaded from: {MODEL_PATH}")
+        
         vectorstore = FAISS.load_local(
             FAISS_PATH,
             embeddings=embedding,
             allow_dangerous_deserialization=True,  # needed to load index.pkl
         )
+        print(f"✅ FAISS index loaded from: {FAISS_PATH}")
+        
         retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": 5})
 
         pdf_qa = RetrievalQA.from_chain_type(
@@ -318,6 +326,7 @@ Do NOT expect the input to be SQL. If the input looks like SQL anyway, execute i
         )
 
         # 4) Router Agent — strict routing instructions
+        print("🔄 Initializing router agent...")
         tools = [pdf_tool, sql_tool]
 
         ROUTER_SYSTEM_PROMPT = """You are a routing assistant that decides which tool to use.
@@ -354,9 +363,12 @@ Return the chosen tool's raw output only. It already includes:
 
         agent = agent_local  # set global
         print("✅ Agent initialization completed successfully!")
+        print("🚀 Application is ready to serve requests!")
         
     except Exception as e:
-        print(f"ERROR: Failed to initialize agent: {e}")
+        print(f"❌ ERROR: Failed to initialize agent: {e}")
+        import traceback
+        print(f"❌ Full traceback: {traceback.format_exc()}")
         print("Please check your OpenAI API key and ensure all dependencies are installed.")
         agent = None
 
