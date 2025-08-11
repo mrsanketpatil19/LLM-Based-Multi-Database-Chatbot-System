@@ -66,12 +66,11 @@ test.html
 
 # Database files - but allow the vendored one
 # healthcare.db
-!healthcare.db
 
 # Exclude models for Railway deployment (download at runtime)
 models/
 # Allow data for offline operation
-!data/
+# !data/
 
 # Development and testing files
 test.html

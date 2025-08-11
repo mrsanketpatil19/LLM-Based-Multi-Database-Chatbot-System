@@ -54,17 +54,26 @@ agent = None  # router agent
 def build_agent_on_startup():
     global agent
     
-    print("🚀 Starting application setup...")
+    print("🚀 Starting Railway setup...")
     
-    # Data is pre-built, just verify it exists
-    print("Verifying pre-built data...")
-    if not DB_PATH.exists():
-        print(f"❌ Database not found at {DB_PATH}")
-        return
-    if not FAISS_PATH.exists():
-        print(f"❌ FAISS index not found at {FAISS_PATH}")
-        return
-    print("✅ Pre-built data verified!")
+    # 1) Database Tool (SQL Agent)
+    print("Creating database from CSV files...")
+    setup_railway()
+    print("✅ Database created successfully!")
+    
+    # 2) PDF Tool (RAG over FAISS)
+    print("Creating FAISS index from PDF files...")
+    # Use remote model for Railway deployment (smaller image size)
+    embedding = HuggingFaceEmbeddings(
+        model_name="sentence-transformers/all-MiniLM-L6-v2",
+        model_kwargs={'device': 'cpu'}
+    )
+    vectorstore = FAISS.load_local(
+        FAISS_PATH,
+        embeddings=embedding,
+        allow_dangerous_deserialization=True,
+    )
+    print("✅ FAISS index created successfully!")
     
     # Check if OpenAI API key is set
     if not OPENAI_API_KEY or OPENAI_API_KEY == "your_openai_api_key_here":
@@ -77,9 +86,9 @@ def build_agent_on_startup():
         llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
 
         # 2) PDF Tool (RAG over FAISS)
-        # Use remote model for deployment (faster startup)
+        # Use local model for offline operation
         embedding = HuggingFaceEmbeddings(
-            model_name="sentence-transformers/all-MiniLM-L6-v2",
+            model_name=str(MODEL_PATH),
             model_kwargs={'device': 'cpu'}
         )
         vectorstore = FAISS.load_local(
@@ -143,10 +152,8 @@ def build_agent_on_startup():
             db=db,
             agent_type=AgentType.OPENAI_FUNCTIONS,
             verbose=False,
-            max_iterations=5,  # Reduced for faster response
-            max_execution_time=30,  # 30 seconds timeout (reduced)
             prefix="""
-You are a helpful medical data assistant. Be concise and fast.
+You are a helpful medical data assistant.
 
 Database schema:
 - patients(patient_id PK, name, age, gender)
@@ -159,7 +166,6 @@ Rules:
 - For patient 'summary', join patients -> visits -> prescriptions -> medications and order by date.
 - Prefer DISTINCT to avoid duplicates where it makes sense.
 - Return concise, faithful results. Do not invent data.
-- Keep responses brief and to the point.
 
 When summarizing, output a short clinical-style paragraph (no bullets).
 """
@@ -182,11 +188,9 @@ Do NOT expect the input to be SQL. If the input looks like SQL anyway, execute i
                         f"SQL: {q}\n"
                         f"Answer: {rows}"
                     )
-                
-                # Use invoke instead of run for better performance
+                # clear previous captured SQLs for a clean grab
                 sql_queries.clear()
-                result = sql_agent.invoke({"input": SQL_PREFIX_FORCED + "\n\nUser question:\n" + q})
-                answer = result.get("output", "No answer generated")
+                answer = sql_agent.run(SQL_PREFIX_FORCED + "\n\nUser question:\n" + q)
                 generated_sql = sql_queries[-1] if sql_queries else "N/A"
                 return (
                     "Source: Database (SQLite: healthcare.db)\n"
@@ -237,8 +241,6 @@ Return the chosen tool's raw output only. It already includes:
             llm=router_llm,
             agent=AgentType.OPENAI_FUNCTIONS,
             verbose=True,
-            max_iterations=3,  # Reduced for faster response
-            max_execution_time=60,  # 1 minute timeout (reduced)
             agent_kwargs={
                 "extra_prompt_messages": [
                     SystemMessagePromptTemplate.from_template(ROUTER_SYSTEM_PROMPT)
@@ -248,13 +250,10 @@ Return the chosen tool's raw output only. It already includes:
         )
 
         agent = agent_local  # set global
-        print("✅ Agent initialized successfully!")
         
     except Exception as e:
         print(f"ERROR: Failed to initialize agent: {e}")
         print("Please check your OpenAI API key and ensure all dependencies are installed.")
-        import traceback
-        traceback.print_exc()
         agent = None
 
 
